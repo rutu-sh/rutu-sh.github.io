@@ -5,14 +5,20 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
+		<link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet">
+		<link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+		<link href="assets/fontawesome/css/solid.css" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
 				<header>
-					<span class="image avatar"><img src="images/avatar.jpg" alt="" /></span>
+					<span class="image avatar"><img src="assets/images/profile_pic.jpg" alt="" /></span>
 					<h1 id="logo"><a href="#">Ruturaj Ramchandra Shitole</a></h1>
 					<p>I once solved a problem<br />
 					and now I can't stop</p>
@@ -29,7 +35,6 @@
 						<li><a href="#skills">Skills</a></li>
 						<li><a href="#hobbies">Hobbies and Interests</a></li>
 						<li><a href="#miscellaneous">Miscellaneous</a></li>
-						<li><a href="#contact">Contact Me</a></li>
 					</ul>
 				</nav>
 				<footer>
@@ -58,7 +63,7 @@
 										</p>
 									</header>
 									<h4>I'm rutu, a software developer at Syncron.</h4>
-									<a href="docs/resume_ruturaj.pdf" class="button icon solid fa-download" download="ruturaj_resume.pdf">Download Resume</a></li>
+									<a href="docs/resume_ruturaj.pdf" class="button small icon solid fa-download" download="ruturaj_resume.pdf">Download Resume</a></li>
 								</div>
 							</section>
 
@@ -80,42 +85,370 @@
 						<!-- Work Experience -->
 						<section id="experience">
 							<div class="container">
-								<h3>Work Experience</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-									Vestibulum augue purus, euismod non commodo id, egestas maximus ante. 
-									Donec volutpat pretium magna sit amet ultrices. Etiam ullamcorper dictum mi. 
-									Cras aliquam, nulla in pretium efficitur, lacus tortor rhoncus nisl, non hendrerit sapien libero at tellus. 
-									Cras ut condimentum augue. Integer lacinia ultrices risus at vulputate. 
-									Nam rhoncus libero vitae elit tristique blandit.
-								</p>
+								<header>
+									<h3>Work Experience</h3>
+								</header>
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingWEOne">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWEOne" aria-expanded="true" aria-controls="collapseWEOne">
+											<p style="color:red">Software Developer &nbsp;</p>
+											<p style="color:blue">@Syncron &nbsp;</p> 
+											<p style="color:green"> [ Mar 2022 - Present ] </p>
+										  </button>
+										</h2>
+										<div id="collapseWEOne" class="accordion-collapse collapse" aria-labelledby="headingWEOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>											  
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingWETwo">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWETwo" aria-expanded="true" aria-controls="collapseWETwo">
+											<p style="color:red">Associate Software Developer &nbsp;</p>
+											<p style="color:blue">@Syncron &nbsp;</p> 
+											<p style="color:green"> [ Jan 2021 - Mar 2022 ] </p>
+										  </button>
+										</h2>
+										<div id="collapseWETwo" class="accordion-collapse collapse" aria-labelledby="headingWETwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>											  
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingWEThree">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWEThree" aria-expanded="true" aria-controls="collapseWEThree">
+											<p style="color:red">Intern &nbsp;</p>
+											<p style="color:blue">@Syncron &nbsp;</p> 
+											<p style="color:green"> [ Jan 2020 - Dec 2020 ] </p>
+										  </button>
+										</h2>
+										<div id="collapseWEThree" class="accordion-collapse collapse" aria-labelledby="headingWEThree" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>											  
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</section>
 
 						<!-- Projects and Competitions -->
 							<section id="projects">
 								<div class="container">
+									<header>
 									<h3>Projects and Competitions</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Vestibulum augue purus, euismod non commodo id, egestas maximus ante. 
-										Donec volutpat pretium magna sit amet ultrices. Etiam ullamcorper dictum mi. 
-										Cras aliquam, nulla in pretium efficitur, lacus tortor rhoncus nisl, non hendrerit sapien libero at tellus. 
-										Cras ut condimentum augue. Integer lacinia ultrices risus at vulputate. 
-										Nam rhoncus libero vitae elit tristique blandit.
-									</p>
+								</header>
+								<div class="accordion" id="accordionExample">
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingPCOne">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePCOne" aria-expanded="true" aria-controls="collapsePCOne">
+											<p style="color:red">Offline Handwritten Kannada Character Recognition &nbsp;</p>
+											<p style="color:blue">@Bangalore University &nbsp;</p> 
+											<p style="color:green"> [2020] </p>
+										  </button>
+										</h2>
+										<div id="collapsePCOne" class="accordion-collapse collapse" aria-labelledby="headingPCOne" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>											  
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingPCTwo">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePCTwo" aria-expanded="true" aria-controls="collapsePCTwo">
+											<p style="color:red">ACM-ICPC (International Collegiate Programming Contest) Regionals&nbsp;</p>
+											<p style="color:blue">@Bangalore University &nbsp;</p> 
+											<p style="color:green"> [2019] </p>
+										  </button>
+										</h2>
+										<div id="collapsePCTwo" class="accordion-collapse collapse" aria-labelledby="headingPCTwo" data-bs-parent="#accordionExample">
+											<div class="accordion-body">
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>											  
+											</div>
+										</div>
+									</div>
+									<div class="accordion-item">
+										<h2 class="accordion-header" id="headingPCThree">
+										  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePCThree" aria-expanded="true" aria-controls="collapsePCThree">
+											<p style="color:red">E-Yantra by IIT-Bombay&nbsp;</p>
+											<p style="color:blue">@Bangalore University &nbsp;</p> 
+											<p style="color:green"> [2016] </p>
+										  </button>
+										</h2>
+										<div id="collapsePCThree" class="accordion-collapse collapse" aria-labelledby="headingPCThree" data-bs-parent="#accordionExample">
+											<div class="accordion-body">		
+												<p>
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+												</p>									  
+											</div>
+										</div>
+									</div>
+								</div>
 								</div>
 							</section>
 						
 						<!-- Skills -->
 							<section id="skills">
 								<div class="container">
-									<h3>Skills</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-										Vestibulum augue purus, euismod non commodo id, egestas maximus ante. 
-										Donec volutpat pretium magna sit amet ultrices. Etiam ullamcorper dictum mi. 
-										Cras aliquam, nulla in pretium efficitur, lacus tortor rhoncus nisl, non hendrerit sapien libero at tellus. 
-										Cras ut condimentum augue. Integer lacinia ultrices risus at vulputate. 
-										Nam rhoncus libero vitae elit tristique blandit.
-									</p>
+									<header>
+										<h3>Skills</h3>
+										<p>Click any skill to know more about my experience with it.</p>
+									</header>
+									
+									<div class="accordion" id="accordionExample">
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingOne">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+												  Programming Languages
+											  </button>
+											</h2>
+											<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+											   	<div class="accordion-body">
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experiencePythonToggle1" role="button">
+																Python
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceCPPToggle1" role="button">
+																C++
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceCToggle1" role="button">
+																C
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceSQLToggle1" role="button">
+																SQL
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceMQL5Toggle1" role="button">
+																MQL5
+															</a>
+														</li>
+													</ul>											  
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingTwo">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+												  Frameworks, Libraries  and Tools
+											  </button>
+											</h2>
+											<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+											   	<div class="accordion-body">
+													<h6>Frameworks</h6>
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceDockerToggle1" role="button">
+																Docker
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceK8sToggle1" role="button">
+																Kubernetes
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceSLSToggle1" role="button">
+																Serverless
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceTFToggle1" role="button">
+																Terraform
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceKFToggle1" role="button">
+																Kubeflow
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceMLFToggle1" role="button">
+																MLFlow
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceOpenAPIToggle1" role="button">
+																OpenAPI
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceLinuxToggle1" role="button">
+																Linux
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceArduinoToggle1" role="button">
+																Arduino
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceMT5Toggle1" role="button">
+																Meta Trader 5
+															</a>
+														</li>
+													</ul>
+													<h6>Libraries</h6>
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceFAPIToggle1" role="button">
+																FastAPI
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceBoto3Toggle1" role="button">
+																Boto3
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle1" role="button">
+																Pandas
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceNumpyToggle1" role="button">
+																Numpy
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceSKLearnToggle1" role="button">
+																Scikit Learn
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceTF2Toggle1" role="button">
+																Tensorflow
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experiencePyTorchToggle1" role="button">
+																PyTorch
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceKerasToggle1" role="button">
+																Keras
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceOpenCVToggle1" role="button">
+																OpenCV
+															</a>
+														</li>
+													</ul>
+													<h6>Tools</h6>
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceGITToggle1" role="button">
+																Git
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceAWSCLIToggle1" role="button">
+																AWS CLI
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceVIMToggle1" role="button">
+																Vim
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceCopilotToggle1" role="button">
+																Github Copilot
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceJupyterToggle1" role="button">
+																JupyterLab
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingThree">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+												  Cloud
+											  </button>
+											</h2>
+											<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+											   	<div class="accordion-body">
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceAWSToggle1" role="button">
+																Amazon Web Services
+															</a>
+														</li>
+													</ul>													  
+												</div>
+											</div>
+										</div>
+										<div class="accordion-item">
+											<h2 class="accordion-header" id="headingFour">
+											  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+												  Concepts
+											  </button>
+											</h2>
+											<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+											   	<div class="accordion-body">
+													<ul style="list-style-type:none;" class="wrapped-list">
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceOOPToggle1" role="button">
+																Object Oriented Programming
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceFuncProgToggle1" role="button">
+																Functional Programming
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceDSAToggle1" role="button">
+																Data Structures and Algorithms
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceDDDToggle1" role="button">
+																Domain Driven Design
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceRESTToggle1" role="button">
+																REST
+															</a>
+														</li>
+														<li>
+															<a class="btn btn-primary" data-bs-toggle="modal" href="#experienceDesThinkToggle1" role="button">
+																Design Thinking
+															</a>
+														</li>
+													</ul>													  
+												</div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</section>
 
@@ -148,7 +481,7 @@
 							</section>
 
 						<!-- Contact Me -->
-						<section id="contact">
+						<!-- <section id="contact">
                             <div class="container">
                                 <h3>Contact Me</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -166,16 +499,810 @@
                                         <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
                                         <div class="col-12">
                                             <ul class="actions">
-                                                <li><input type="submit" class="primary" value="Send Message" /></li>
-                                                <li><input type="reset" value="Reset Form" /></li>
+                                                <li><input type="submit" class="primary small" value="Send Message" /></li>
+                                                <li><input type="reset" value="Reset Form" class="small"/></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </form>
                             </div>
-                        </section>
+                        </section> -->
 					</div>
-				
+
+
+					<div class="modal fade" id="exampleModalToggle1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="exampleModalToggleLabel1">Modal 1</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>Left &amp; Right</h5>
+								<p><span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+								<p><span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+							</div>
+						  </div>
+						</div>
+					</div>	
+
+					<div class="modal fade" id="experiencePythonToggle1" aria-hidden="true" aria-labelledby="experiencePythonToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experiencePythonToggleLabel1">Python</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Python</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/python_logo.png" alt="" />
+									</span>
+									E-Yantra by IIT-Bombay was the programme that launched my Python journey. 
+									&nbsp; We had to complete assignments involving image processing utilising Python and some libraries including OpenCV, Numpy, and SciPy. 
+									&nbsp; I became interested in Python after learning how much it can be utilised to develop systems and solve problems. 
+									&nbsp; Following that, I began experimenting with more Python uses in machine learning, API design, and image processing. 
+								</p>
+								<p>
+									I utilised Python a lot in my undergrad to build the backend for my semester projects and in my dissertation. 
+									&nbsp; I developed those projects using python based frameworks like Flask and Django. 
+									&nbsp; These projects were instrumental in getting me an internship at Syncron.
+								</p>
+								<p>
+									I mostly worked on creating and deploying Python-based microservices after joining Syncron as an intern. 
+									&nbsp; I gained knowledge on how to setup and develop Python-based projects and microservices from scratch. 
+									&nbsp; Additionally, I had first-hand experience using a variety of Python frameworks, libraries, and tools, including FastAPI, Pandas, Numpy, Tensorflow, etc. 
+									&nbsp; Python is still my go-to language for developing practically anything, and I still use it frequently. 
+									&nbsp; Python's simplicity and adaptability are more than enough for me to easily construct a project.
+									&nbsp; My MLOps work at Syncron has also benefited from the use of Python. 
+									&nbsp; I created pipeline components that carried out intricate statistical calculations using Python, 
+									and I also used it to communicate with the cloud to create the infrastructure that surrounded those pipelines.
+								</p>
+
+								<p>
+									For all of my development efforts, Python has been my go-to tool. 
+									&nbsp; The main reasons I have stayed with Python for so long are the abundance of resources created around it and how rapidly any hard issue can be addressed in Python.
+								</p>
+ 
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceCPPToggle1" aria-hidden="true" aria-labelledby="experienceCPPToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceCPPToggleLabel1">C++</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with C++</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/cpp.png" alt="" />
+									</span>
+									In my eleventh grade, when I chose computer science as my major, I was first exposed to C++. 
+									&nbsp; My excellent teacher showed us how to reason logically and translate that reasoning into practical C++ code. 
+									&nbsp; C++ taught me the basics of a programming language, and after that, learning any other programming language was simple.
+									&nbsp; I first learned about object-oriented programming in the C++ course. 
+									&nbsp; And using C++ to implement OOP concepts was incredibly elegant.
+								</p>
+								<p>
+									I learned about data structures, algorithms, and how to use C++ to implement them during my undergraduate studies. 
+									&nbsp; Then I learned about competitive programming, which called for the use of high-performance algorithms and data structures to solve complicated problems. 
+									&nbsp; Given my knowledge with C++ and the abundance of data structures and resources available, C++ seemed an easy choice. 
+									&nbsp; In the future, we went on to qualify for the ACM ICPC regionals, and C++ was our language of choice in that. 
+								</p>
+								<p>
+									My gateway into the world of programming and software development has been C++. 
+									&nbsp; I learned several important lessons from the structure and discipline needed to write C++ programs that I still apply to my work with other programming languages.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="experienceCToggle1" aria-hidden="true" aria-labelledby="experienceCToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceCToggleLabel1">C</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with C</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/c.png" alt="" />
+									</span>
+									During my undergraduate studies, I took a computer graphics course that served as my introduction to C. 
+									&nbsp; C and OpenGL were used to teach us how to code graphical objects and make animations.
+									&nbsp; It was made more thrilling by using a computer language to create images
+								</p>
+								<p>
+									I was also introduced to structural programming techniques through C. 
+									&nbsp; Even more intriguing was the use of structural programming in C to achieve the same outcomes as an Object Oriented Language like C++. 
+									&nbsp; It also showed me that not every programming issue needs to be solved using Classes in an OOP manner; 
+									sometimes it makes more sense to keep things really straightforward by only using structures and methods.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceSQLToggle1" aria-hidden="true" aria-labelledby="experienceSQLToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceSQLToggleLabel1">SQL</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with SQL</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/sql_logo.png" alt="" />
+									</span>
+									In my 11th and 12th grades, I took a Computer Science course that included SQL. 
+									&nbsp; I mastered SQL querying and the fundamentals of database administration. 
+									&nbsp; And later on, having such knowledge proved to be quite helpful.
+								</p>
+								<p>
+									&nbsp; During my undergraduate studies, I expanded my knowledge of DBMS and SQL and completed numerous semester projects that combined these technologies with various front- and back-end frameworks.
+								</p>
+								<p>
+									SQL has been helpful to me in practically all of my tasks at Syncron. 
+									&nbsp; I've created intricate and effective SQL queries that lowered the workload on the system while still producing the needed results. 
+									&nbsp; Our pipelines then utilised the answers to these queries to carry out statistical and machine learning calculations.
+									&nbsp; We have a lot of data, so these queries needed to be as efficient as feasible to execute in production systems.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceMQL5Toggle1" aria-hidden="true" aria-labelledby="experienceMQL5ToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceSQL5ToggleLabel1">MQL5</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with MQL5</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/mql5_logo.png" alt="" />
+									</span>
+									My experiences with MQL5 began when I learned about Algorithmic Trading. 
+									&nbsp; I began learning more about it with some friends and came upon Meta Trader, a trading platform. 
+									&nbsp; Expert Advisors, which are programms that perform trades automatically, are a notion in Meta Trader. 
+									&nbsp; Expert Advisors caught my interest and allowed me to approach trading as a mathematical and computational challenge.
+								</p>
+								<p>
+									Working with MQL5 and Meta Trader has taught me a lot about trading, and I now grasp those concepts both theoretically and programmatically. 
+									&nbsp; In MQL5, I can easily develop Indicators and Expert-Advisors and have them running on a VPS.	
+									&nbsp; Because the MQL community is limited, there aren't many tools accessible for developers. 
+									&nbsp; As I get more experience with MQL and trading systems, I intend to create open-source tools for MQL users.		
+								</p>
+								
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceDockerToggle1" aria-hidden="true" aria-labelledby="experienceDockerToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceDockerToggleLabel1">Docker</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Docker</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/docker_logo.png" alt="" />
+									</span>
+									Docker was introduced to me at the start of my internship at Syncron. 
+									&nbsp; Docker taught me new ways to package software and have it run on any computer that has a container runtime. 
+									&nbsp; Since then, I've used Docker to bundle all of my applications.
+									&nbsp; I loved the idea of layers in a Docker Image, 
+									and I prefer to structure my Dockerfiles so that any change in project requires only a small number of layers in a Docker Image to be changed.	
+									&nbsp; At Syncron I have used Docker in all my projects, from building microservices to building components of statistical and machine learning pipelines.
+								</p>
+								<p>
+									My present team largely relies on containerizing and delivering applications. 
+									&nbsp; As a platform team that provides Product-as-a-Service as well as Infrastructure to clients and other Syncron teams, we must be agnostic to programming languages and software development tools. 
+									&nbsp; And Docker makes it possible for us to do so. 
+									&nbsp; We containerize all of our internal components, and the entire platform then supports the execution of any containerized application from outside.
+								</p>
+								
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceK8sToggle1" aria-hidden="true" aria-labelledby="experienceK8sToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceK8sToggleLabel1">Kubernetes</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Kubernetes</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/k8s_logo.png" alt="" />
+									</span>
+									After becoming acquainted with Docker, the next level of my learning included Kubernetes. 
+									&nbsp; After utilising Docker Swarm, kuberenetes seems to provide all of Docker Swarm's functionality and more.
+									&nbsp; My current team mainly relies on Kubernetes, and we adhere to the Cloud Native Computing Foundation landscape to keep our infrastructure less dependant on the cloud provider. 
+									&nbsp; And Kubernetes, with its abundance of tools, aids us in this endeavour. 
+									&nbsp; I collaborated with my peers on Kubernetes and other tools and frameworks for Kubernetes, such as Helm, Istio, Argo CD, and others. 
+									&nbsp; We even took inspiration from the Kubernetes architecture and altered the workflow to make it easier to deploy new microservices in our system.
+								</p>
+								
+								
+							</div>
+						  </div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="experienceSLSToggle1" aria-hidden="true" aria-labelledby="experienceSLSToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceSLSToggleLabel1">Serverless</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Serverless</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/serverless_logo.png" alt="" />
+									</span>
+									During my internship at Syncron, one of the first technologies I worked with on a cloud platform was Serverless. 
+									&nbsp; The services we designed did not require a server to be running continually; it only needed to come up on demand and then shut down once the work was completed. 
+									&nbsp; And Serverless came in handy. I've created and deployed multiple microservices on AWS using Severless ( AWS Lambda ). 
+									&nbsp; When we needed to swiftly develop and deploy applications, serverless came in helpful.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="experienceTFToggle1" aria-hidden="true" aria-labelledby="experienceTFToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceTFToggleLabel1">Terraform</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Terraform</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/tf_logo.png" alt="" />
+									</span>
+									During my internship at Syncron, one of the first technologies I worked with on a cloud platform was Serverless. 
+									&nbsp; The services we designed did not require a server to be running continually; it only needed to come up on demand and then shut down once the work was completed. 
+									&nbsp; And Serverless came in handy. I've created and deployed multiple microservices on AWS using Severless ( AWS Lambda ). 
+									&nbsp; When we needed to swiftly develop and deploy applications, serverless came in helpful.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+
+					<div class="modal fade" id="experienceKFToggle1" aria-hidden="true" aria-labelledby="experienceKFToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceKFToggleLabel1">Kubeflow</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Kubeflow</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/kf_logo.png" alt="" />
+									</span>
+									During my internship at Syncron, one of the first technologies I worked with on a cloud platform was Serverless. 
+									&nbsp; The services we designed did not require a server to be running continually; it only needed to come up on demand and then shut down once the work was completed. 
+									&nbsp; And Serverless came in handy. I've created and deployed multiple microservices on AWS using Severless ( AWS Lambda ). 
+									&nbsp; When we needed to swiftly develop and deploy applications, serverless came in helpful.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceMLFToggle1" aria-hidden="true" aria-labelledby="experienceMLFToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceMLFToggleLabel1">MLFlow</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with MLFlow</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/mlf_logo.png" alt="" />
+									</span>
+									During my internship at Syncron, one of the first technologies I worked with on a cloud platform was Serverless. 
+									&nbsp; The services we designed did not require a server to be running continually; it only needed to come up on demand and then shut down once the work was completed. 
+									&nbsp; And Serverless came in handy. I've created and deployed multiple microservices on AWS using Severless ( AWS Lambda ). 
+									&nbsp; When we needed to swiftly develop and deploy applications, serverless came in helpful.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceOpenAPIToggle1" aria-hidden="true" aria-labelledby="experienceOpenAPIToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceOpenAPIToggleLabel1">OpenAPI</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with OpenAPI</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/openapi_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceLinuxToggle1" aria-hidden="true" aria-labelledby="experienceLinuxToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceLinuxToggleLabel1">Linux</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Linux</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/linux_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="modal fade" id="experienceArduinoToggle1" aria-hidden="true" aria-labelledby="experienceArduinoToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceArduinoToggleLabel1">Arduino</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Arduino</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/arduino_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="modal fade" id="experienceMT5Toggle1" aria-hidden="true" aria-labelledby="experienceMT5ToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceMT5ToggleLabel1">Meta Trader</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Meta Trader</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/mt5_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceFAPIToggle1" aria-hidden="true" aria-labelledby="experienceFAPIToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceFAPIToggleLabel1">FastAPI</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with FastAPI</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/fastapi_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceBoto3Toggle1" aria-hidden="true" aria-labelledby="experienceBoto3ToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceBoto3ToggleLabel1">Boto3</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Boto3</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceNumpyToggle1" aria-hidden="true" aria-labelledby="experienceNumpyToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceNumpyToggleLabel1">Numpy</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Numpy</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/numpy_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceSKLearnToggle1" aria-hidden="true" aria-labelledby="experienceSKLearnToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceSKLearnToggleLabel1">Scikit Learn</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Scikit Learn</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/sklearn_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceTF2Toggle1" aria-hidden="true" aria-labelledby="experienceTF2ToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceTF2ToggleLabel1">Tensorflow</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Tensorflow</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/tensorflow_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experiencePyTorchToggle1" aria-hidden="true" aria-labelledby="experiencePyTorchToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experiencePyTorchToggleLabel1">PyTorch</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with PyTorch</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/pytorch_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceKerasToggle1" aria-hidden="true" aria-labelledby="experienceKerasToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceKerasToggleLabel1">Keras</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Keras</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/keras_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceOpenCVToggle1" aria-hidden="true" aria-labelledby="experienceOpenCVToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceOpenCVToggleLabel1">Open CV</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Open CV</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/opencv_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceGITToggle1" aria-hidden="true" aria-labelledby="experienceGITToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceGITToggleLabel1">GIT</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with GIT</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/git_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceAWSCLIToggle1" aria-hidden="true" aria-labelledby="experienceAWSCLIToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceAWSCLIToggleLabel1">AWS CLI</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with AWS CLI</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceVIMToggle1" aria-hidden="true" aria-labelledby="experienceVIMToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceVIMToggleLabel1">VIM</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with VIM</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/vim_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceCopilotToggle1" aria-hidden="true" aria-labelledby="experienceCopilotToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceCopilotToggleLabel1">Github Copilot</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Github Copilot</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/copilot_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceJupyterToggle1" aria-hidden="true" aria-labelledby="experienceJupyterToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceJupyterToggleLabel1">JupyterLab</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with JupyterLab</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/jupyterlab_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceAWSToggle1" aria-hidden="true" aria-labelledby="experienceAWSToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceAWSToggleLabel1">Amazon Web Services</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Amazon Web Services</h5>
+								<p>
+									<span class="image left">
+										<img src="assets/images/aws_logo.png" alt="" />
+									</span>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="modal fade" id="experienceOOPToggle1" aria-hidden="true" aria-labelledby="experienceOOPToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceOOPToggleLabel1">Object Oriented Programming</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Object Oriented Programming</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceFuncProgToggle1" aria-hidden="true" aria-labelledby="experienceFuncProgToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceFuncProgToggleLabel1">Functional Programming</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Functional Programming Programming</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+					
+					<div class="modal fade" id="experienceDSAToggle1" aria-hidden="true" aria-labelledby="experienceDSAToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceDSAToggleLabel1">Data Structures and Algorithms</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Data Structures and Algorithms</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceDDDToggle1" aria-hidden="true" aria-labelledby="experienceDDDToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceDDDToggleLabel1">Domain Driven Design</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Domain Driven Design</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceRESTToggle1" aria-hidden="true" aria-labelledby="experienceRESTToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceRESTToggleLabel1">REST</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with REST</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+					<div class="modal fade" id="experienceDesThinkToggle1" aria-hidden="true" aria-labelledby="experienceDesThinkToggleLabel1" tabindex="-1">
+						<div class="modal-dialog modal-xl modal-dialog-scrollable">
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <h5 class="modal-title" id="experienceDesThinkToggleLabel1">Design Thinking</h5>
+							  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>
+							<div class="modal-body">
+								<h5>My experience with Design Thinking</h5>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						  </div>
+						</div>
+					</div>
 
 				<!-- Footer -->
 					<section id="footer">
@@ -190,8 +1317,8 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<!-- <script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script> -->
 			<script src="assets/js/browser.min.js"></script>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>

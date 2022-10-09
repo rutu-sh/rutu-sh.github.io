@@ -1,0 +1,44 @@
+.wrapped-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+.wrapped-list li a i{
+    font-size: 3em;
+}
+
+.clickable-svg 
+
+
+.clickable-svg a {
+    display: inline-block;
+    position: relative; 
+    z-index: 1;
+}
+
+/* .clickable-svg a span {
+    display: inline-block;
+} */
+
+
+.clickable-svg a svg {
+    position: relative; 
+    z-index: -1;
+}
+
+._coral-Accordion-itemHeader {
+    position: relative;
+    box-sizing: border-box;
+    padding: 8px 16px 8px 34px;
+    margin: 0;
+    height: auto;
+    min-height: 39px;
+    font-size: 11px;
+    text-transform: uppercase;
+    line-height: 23px;
+    letter-spacing: 0.0006em;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-weight: 500;
+}
