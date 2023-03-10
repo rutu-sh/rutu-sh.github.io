@@ -1,10 +1,12 @@
 body {
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
 }
 
 .top-pane {
     position: relative;
-    background-color: white;
+    /* background-color: #f2f2f2; */
+    background-image: linear-gradient(to bottom, #f2f2f2, #ffffff);
     height: 150px;
     border-bottom: 3px solid #e7e7e7;  
 }
@@ -33,4 +35,26 @@ body {
 
 .about-me {
     border-right: 2px solid #e7e7e7;
+}
+
+.round-image {
+    border-radius: 50%;
+}
+
+.acc-div-right-img {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    background-size: cover;
+    /* background-position: center center; */
+    background-position: 75% 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border: 10px solid white;
+}
+
+.acc-header-icon-img {
+    width: 40px;
+    height: 40px;
+    background-position: center center;
+    margin-left: 10px;
 }
