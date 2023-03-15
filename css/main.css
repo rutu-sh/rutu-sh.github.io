@@ -61,3 +61,13 @@ body {
     background-position: center center;
     margin-left: 10px;
 }
+
+.wrapped-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px
+}
+
+.wrapped-list li a i{
+    font-size: 3em;
+}
