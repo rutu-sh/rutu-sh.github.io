@@ -254,9 +254,10 @@
                               <div class="accordion-body">
                                 <div class="row">
                                   <div class="col-md-9">
-                                    <p>Trained neural networks to recognize handwritten kannada characters</p>
-                                    <p>Utilized a combination of feature regularization, augmentation techniques and label propagation to reduce reliance on training
-                                      data</p>
+                                    <p>This project was done as a part of my dissertation. Our motive was to create a framework which would allow for recognition of handwritten characters, and would require minimal training to incorporate new classes. We observed that even though supervised learning models work well at performing tasks like classification, they require a lot of data for training. This is fine for classification tasks where a lot of samples for each class can be gathered easily. However, on training these networks for applications having sparse data samples, these networks don't perform well. For such tasks, we proposed a framework that uses semi-supervised learning techniques.</p>
+                                    <p>We also divide the dataset into three categories: base, novel, and validation. The base dataset is the one where classes have a lot of samples available for training. We use 24 of the 47 character classes from the Kannada Abugida (alphabets). The novel dataset has fewer samples and is used to test the incorporation of unseen classes during finetuning. It contains 12 character classes. The validation dataset is used for validation of the entire framework and contains 11 character classes.</p>
+                                    <p>The first step consists of pretraining, where trains the network to learn good feature representation on the base class. This is followed by episodic finetuning on novel dataset, this tunes the network to incorporate unseen classes usign 1 and 5 shot learning. After finetuning we use the validation dataset to validate the network on the validation dataset.</p>
+                                    <p>We were able to achieve good accuracies in comparison to previous works with the reduced reliance on the training data.</p>
                                   </div>
                                   <div class="col-md-3">
                                     <p><a href="https://github.com/rutu-sh/offline-handwritten-kannada-character-recognition" target="_blank">Learn More about this project</a></p>
