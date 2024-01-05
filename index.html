@@ -277,6 +277,36 @@
                 <div style="margin-top: 10px;">
                     <div class="accordion" id="accordianProjects">
                         <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianProject4">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData4" aria-expanded="false" aria-controls="accordianProjectData4">
+                                Opentelemetry Kubernetes Experiments
+                                <image class="acc-header-icon-img" src="assets/images/opentelemetry_logo.png" alt="Opentelemetry Logo Logo"></image>
+                              </button>
+                            </h2>
+                            <div id="accordianProjectData4" class="accordion-collapse collapse" aria-labelledby="accordianProject4" data-bs-parent="#accordianProjects">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <p>
+                                      Opentelemetry and Kubernetes are two of the most popular CNCF projects.
+                                      Kubernetes is an already accepted solution for a variety of orchestration usecases, it has been tried and tested for deploying a cluster of microservices at different scales. 
+                                      In a distributed environment with multiple microservices, a kubernetes cluster can get quite complex as the microservices interact with each other. 
+                                      In such a setup, if there is no uniform layer for observability, the MTTD (Mean Time To Detect) and the MTTR (Mean Time To Resolve) can significantly go up. 
+                                      Having a standard observability layer would help in this situation by allowing for fetching the telemetry data (metrics, traces, logs) and displaying it in a dashboarding tool such as Grafana to trace out the flow and pinpoint the problem.
+                                      Opentelemetry is aimed at providing a standard protocol and tools for observability. 
+                                      It defines the opentelemetry specification for instrumenting telemetry data. 
+                                      The benefit of having a standard specification for telemetry data is in using the data with other tools down the line. 
+                                      The instrumented data can then be integrated with tools like Jaeger, Zipkin, Prometheus, etc. or with some vendor-specific tools.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <p><a href="https://github.com/rutu-sh/otel-k8s-experiments" target="_blank">Learn More about this project</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
                             <h2 class="accordion-header" id="accordianProject1">
                               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData1" aria-expanded="false" aria-controls="accordianProjectData1">
                                 Offline Handwritten Kannada Character Recognition
