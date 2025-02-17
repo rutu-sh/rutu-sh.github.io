@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rutu's Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="row" id="header">
+      <div class="col-md-9">
+        <header class="big-text-top">Ruturaj Ramchandra Shitole</header>
+      </div>
+      <div class="col-md-3">
+        <img src="assets/images/profile_pic.jpg" alt="Profile Picture" class="round-img-top">
+      </div>
+    </div>
+    <br>
+    <div style="margin-bottom: 50px; margin-left: 50px; margin-right: 50px;">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Main</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Miscellaneous</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <div class="container">
+            <br>
+            <div class="row">
+              <div class="col-md-9 about-me">
+                <h1>
+                    Namaste!
+                </h1>
+                <p>
+                  I am Ruturaj Ramchandra Shitole, a Software Engineer currently studying at George Washington University. 
+                  My interests primarily lie in building scalable and fault-tolerant systems that suite the needs of both business and customers. 
+                  I believe that being adaptable is crucial in the fast-paced tech industry, and I am always open to new ideas and ways of thinking. 
+                  My unique approach to problem-solving allows me to think outside the box and come up with creative solutions. 
+                  Additionally, I am adept at learning abstract concepts and applying them across different domains, which helps me stay up-to-date with the latest trends and developments in the tech world.            
+                </p>
+                <i>Get to know my research interests <button type="button" class="btn btn-link align-baseline m-0 px-0 py-0" id="research-tab-link"  style="font-style: italic;">Here</button>.</i> 
+              </div>
+              <div class="col-6 col-md-3">
+                <div>
+                  <a href="https://k8s.rutu-sh.com" target="_blank"><button class="btn btn-primary rounded-pill d-block my-4">Read my k8s book</button></a>
+                </div>
+                <div>
+                  <a href="resume_ruturaj.pdf" download="resume_ruturaj"><button class="btn btn-primary rounded-pill d-block my-4">Download Résumé</button></a>
+                </div>
+                <div>
+                  <a href="https://linkedin.com/in/rutu-sh" target="_blank"><button class="btn btn-primary rounded-pill d-block my-4">LinkedIn</button></a>
+                </div>
+                <div>
+                  <a href="https://github.com/rutu-sh" target="_blank"><button class="btn btn-primary rounded-pill d-block my-4">Github</button></a>
+                </div>
+              </div>
+            </div>
+            <br> 
+            <div class="row" style="margin-top: 20px;">
+                <h1>Work Experience</h1>
+                <div style="margin-top: 20px;">
+                    <div class="accordion" id="accordianWorkExperience">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianWE4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData4" aria-expanded="false" aria-controls="accordianWEData4">
+                            Graduate Teaching Assistant
+                            <image class="acc-header-icon-img" src="assets/images/gwlogo.png" alt="GW Logo"></image>
+                          </button>
+                        </h2>
+                        <div id="accordianWEData4" class="accordion-collapse collapse" aria-labelledby="accordianWE4" data-bs-parent="#accordianWorkExperience">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                  <p><b>Organization: </b>George Washington University</p>
+                                  <p><b>Position: </b>Graduate Teaching Assistant</p>
+                                  <p><b>Duration: </b>Sep 2024 - Present</p>
+                                  <p>
+                                    <b>Role: </b>
+                                    <ul>
+                                      <li>Spring'25: Computer architecture and organization</li>
+                                      <li>Fall'24: Systems Programming</li>
+                                    </ul>
+                                  </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><a href="https://sibin.github.io/teaching/csci2410-gwu-systems_programming/fall_2024/index.html" target="_blank">Systems Programming Course</a></p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianWE1">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData1" aria-expanded="false" aria-controls="accordianWEData1">
+                                Software Engineer
+                                <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                              </button>
+                            </h2>
+                            <div id="accordianWEData1" class="accordion-collapse collapse" aria-labelledby="accordianWE1" data-bs-parent="#accordianWorkExperience">
+                              <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                      <p><b>Organization: </b>Syncron</p>
+                                      <p><b>Position: </b>Software Engineer</p>
+                                      <p><b>Duration: </b>Jan 2022 - Dec 2023</p>
+                                      <p>
+                                        <b>Role: </b>
+                                        <ul>
+                                          <li>Member of the Datalab and Syncron.AI team</li>
+                                          <li>MLOps</li>
+                                          <li>Acting Data Scientist in the team</li>
+                                          <li>Understanding the maths behind complex statistical and ML solutions, and building applications and end-to-end pipelines products</li>
+                                          <li>Creating and maintaining infrastructure and applications to support ML Lifecycle</li>
+                                        </ul>
+                                      </p>
+                                      <p><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                                      <p>My job as a Software Engineer has evolved to encompass the infrastructure aspect of the MLOps Domain. 
+                                        Through this, I have become proficient in utilizing Kubernetes and other CNCF-approved resources to create tools and infrastructure that support the Data Science and ML Lifecycle. 
+                                        Working with Kubernetes and its associated tools has sparked my interest in exploring their potential application in serving ML models as products.
+                                      </p>
+                                      <p>
+                                        The research paper titled <b>Hidden Technical Debt in Machine Learning Systems</b> by Google researchers has been a source of inspiration for me. 
+                                        The paper highlights the challenges of implementing ML systems in practical applications. 
+                                        The paper's diagram portrays the "ML Code" component as relatively small, which underscores the need for extensive post-coding work to realize its full potential. 
+                                        This principle resonates with my team's approach to providing value to our organization. 
+                                        My responsibilities also include designing and developing microservices that support the ML workflow and exploring various ML tools through experimentation.
+                                      </p>
+                                      <p>
+                                        Another fascinating aspect of my work involves constructing advanced analytics models for new price-related applications. 
+                                        This particular facet of my job demands a deep understanding of complex mathematical and ML concepts, which I then translate into programming and visualization. 
+                                        The models are implemented as end-to-end pipelines with analytical dashboards that visualize the results. 
+                                        One notable contribution of mine was the development of a solution called <b>Top-Down Price Optimization.</b>
+                                        This solution combined enterprise pricing with multivariate calculus and business rules to provide a tool for strategically adjusting prices. 
+                                        The objective was to assist businesses in optimizing prices to achieve a desired increase in revenue and maximize profits while adhering to relevant business constraints.
+                                      </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="accordianWE2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData2" aria-expanded="false" aria-controls="accordianWEData2">
+                              Associate Software Developer
+                              <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                            </button>
+                          </h2>
+                          <div id="accordianWEData2" class="accordion-collapse collapse" aria-labelledby="accordianWE2" data-bs-parent="#accordianWorkExperience">
+                            <div class="accordion-body">
+                              <div class="row">
+                                  <div class="col-md-9">
+                                    <p><b>Organization: </b>Syncron</p>
+                                    <p><b>Position: </b>Associate Software Developer</p>
+                                    <p><b>Duration: </b>Jan 2021 - Dec 2021</p>
+                                    <p>
+                                      <b>Role: </b>
+                                      <ul>
+                                        <li>Part of the Datalab and Analytics BI team</li>
+                                        <li>Designing and maintaining end-to-end statistical and ML Pipelines</li>
+                                        <li>Developing and maintaining Analytical and BI products and tools around them</li>
+                                      </ul>
+                                    </p>
+                                    <p><b>Tech Stack: </b>AWS, Docker, Kubeflow, Python</p>
+                                    <p>After completing a year-long internship, I was promoted to the position of Associate Software Developer and my responsibilities expanded to include the MLOps domain. 
+                                      In addition to developing and maintaining BI tools and services, I worked on developing price-related use cases. 
+                                      This involved understanding business requirements, analyzing customer data, and developing end-to-end pipelines to handle the entire process, from reading raw data to generating analytical dashboards for customers.
+                                    </p>
+                                    <p>As a member of the Datalab team at Syncron, I gained valuable knowledge about applying Object-Oriented Programming principles beyond programming. 
+                                      Concepts such as Abstraction and Polymorphism were used in designing and planning the architecture. 
+                                      Additionally, I became familiar with the concept of functional programming, which allowed me to write code in terms of functions that were more readable and easy to follow.
+                                    </p>
+                                    <p>
+                                      Working on planning and designing solutions also exposed me to the concept of Domain-Driven Design. 
+                                      I learned how to design a solution based on the problem's domain, and then code it using the principles of OOP and functional programming.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="accordianWE3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData3" aria-expanded="false" aria-controls="accordianWEData3">
+                              Intern
+                              <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                            </button>
+                          </h2>
+                          <div id="accordianWEData3" class="accordion-collapse collapse" aria-labelledby="accordianWE3" data-bs-parent="#accordianWorkExperience">
+                            <div class="accordion-body">
+                              <div class="row">
+                                  <div class="col-md-9">
+                                    <p><b>Organization: </b>Syncron</p>
+                                    <p><b>Position: </b>Intern</p>
+                                    <p><b>Duration: </b>Jan 2020 - Dec 2020</p>
+                                    <p>
+                                      <b>Role: </b>
+                                      <ul>
+                                        <li>Part of the Analytics BI team</li>
+                                        <li>Developing and maintaining Analytical and BI products and tools around them</li>
+                                        <li>Developing and mainting microservices</li>
+                                      </ul>
+                                    </p>
+                                    <p><b>Tech Stack: </b>AWS, Serverless, Docker, Python</p>
+                                    <p>
+                                      My internship provided my first professional exposure to the world of IT, where I gained valuable knowledge regarding software development and deployment as a service. I was able to hone my skills in writing readable and maintainable code while working extensively with Python, Serverless, and Docker. The software I developed primarily served to facilitate business intelligence work for customers, providing me with valuable insights into how data is visualized to meet business needs and draw insights.
+                                    </p>
+                                    <p>
+                                      Moreover, I had the opportunity to be involved in the design and development of microservices for internal use by various teams, which allowed me to expand my technical proficiency further.
+                                    </p> 
+                                  </div>
+                                  <div class="col-md-3">
+                                      <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                </div> 
+            </div>
+            <br>
+            <div class="row">
+              <h1>Education</h1>
+              <div style="margin-top: 10px;">
+                  <div class="accordion" id="accordionEducation">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianEdu0">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianEduData0" aria-expanded="false" aria-controls="accordianEduData0">
+                            Graduate
+                            <image class="acc-header-icon-img" src="assets/images/gwlogo.png" alt="Graduate university logo"></image>
+                          </button>
+                        </h2>
+                        <div id="accordianEduData0" class="accordion-collapse collapse" aria-labelledby="accordianEdu0" data-bs-parent="#accordionEducation">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                  <p><b>Degree: </b>Master of Science</p>
+                                  <p><b>Major: </b>Computer Science</p>
+                                  <p><b>University: </b>School of Engineering and Applied Sciences, George Washington University</p>
+                                  <p><b>Duration: </b>January 2024 - December 2025</p>
+                                </div>
+                                <div class="col-md-3">
+                                  <p><a href="https://www.gwu.edu/" target="_blank">Learn More about George Washington University</a></p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianEdu1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianEduData1" aria-expanded="false" aria-controls="accordianEduData1">
+                            Undergraduate
+                            <image class="acc-header-icon-img" src="assets/images/bu_logo.png" alt="Undergraduate university logo"></image>
+                          </button>
+                        </h2>
+                        <div id="accordianEduData1" class="accordion-collapse collapse" aria-labelledby="accordianEdu1" data-bs-parent="#accordionEducation">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                  <p><b>Degree: </b>Bachelor of Engineering</p>
+                                  <p><b>Major: </b>Computer Science</p>
+                                  <p><b>University: </b>Bangalore University</p>
+                                  <p><b>Duration: </b>August 2016 - September 2020</p>
+                                </div>
+                                <div class="col-md-3">
+                                  <p><a href="https://eng.bangaloreuniversity.ac.in/" target="_blank">Learn More about Bangalore University</a></p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+          <br>
+            <div class="row" style="margin-top: 20px;">
+                <h1>Projects and Competitions</h1>
+                <div style="margin-top: 10px;">
+                    <div class="accordion" id="accordianProjects">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianProject5">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData5" aria-expanded="false" aria-controls="accordianProjectData5">
+                                Opentelemetry Kubernetes Experiments
+                                <image class="acc-header-icon-img" src="assets/images/opentelemetry_logo.png" alt="Opentelemetry Logo Logo"></image>
+                              </button>
+                            </h2>
+                            <div id="accordianProjectData5" class="accordion-collapse collapse" aria-labelledby="accordianProject5" data-bs-parent="#accordianProjects">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <p>
+                                      Opentelemetry and Kubernetes are two of the most popular CNCF projects.
+                                      Kubernetes is an already accepted solution for a variety of orchestration usecases, it has been tried and tested for deploying a cluster of microservices at different scales. 
+                                      In a distributed environment with multiple microservices, a kubernetes cluster can get quite complex as the microservices interact with each other. 
+                                      In such a setup, if there is no uniform layer for observability, the MTTD (Mean Time To Detect) and the MTTR (Mean Time To Resolve) can significantly go up. 
+                                      Having a standard observability layer would help in this situation by allowing for fetching the telemetry data (metrics, traces, logs) and displaying it in a dashboarding tool such as Grafana to trace out the flow and pinpoint the problem.
+                                      Opentelemetry is aimed at providing a standard protocol and tools for observability. 
+                                      It defines the opentelemetry specification for instrumenting telemetry data. 
+                                      The benefit of having a standard specification for telemetry data is in using the data with other tools down the line. 
+                                      The instrumented data can then be integrated with tools like Jaeger, Zipkin, Prometheus, etc. or with some vendor-specific tools.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <p><a href="https://github.com/rutu-sh/otel-k8s-experiments" target="_blank">Learn More about this project</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianProject1">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData1" aria-expanded="false" aria-controls="accordianProjectData1">
+                                Offline Handwritten Kannada Character Recognition
+                                <image class="acc-header-icon-img" src="assets/images/bu_logo.png" alt="BU Logo"></image>
+                              </button>
+                            </h2>
+                            <div id="accordianProjectData1" class="accordion-collapse collapse" aria-labelledby="accordianProject1" data-bs-parent="#accordianProjects">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <p>This project was done as a part of my dissertation. Our motive was to create a framework which would allow for recognition of handwritten characters, and would require minimal training to incorporate new classes. We observed that even though supervised learning models work well at performing tasks like classification, they require a lot of data for training. This is fine for classification tasks where a lot of samples for each class can be gathered easily. However, on training these networks for applications having sparse data samples, these networks don't perform well. For such tasks, we proposed a framework that uses semi-supervised learning techniques.</p>
+                                    <p>We also divide the dataset into three categories: base, novel, and validation. The base dataset is the one where classes have a lot of samples available for training. We use 24 of the 47 character classes from the Kannada Abugida (alphabets). The novel dataset has fewer samples and is used to test the incorporation of unseen classes during finetuning. It contains 12 character classes. The validation dataset is used for validation of the entire framework and contains 11 character classes.</p>
+                                    <p>The first step consists of pretraining, where trains the network to learn good feature representation on the base class. This is followed by episodic finetuning on novel dataset, this tunes the network to incorporate unseen classes usign 1 and 5 shot learning. After finetuning we use the validation dataset to validate the network on the validation dataset.</p>
+                                    <p>We were able to achieve an accuracy of 99.13%, while using less data.</p>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <p><a href="https://github.com/rutu-sh/offline-handwritten-kannada-character-recognition" target="_blank">Learn More about this project</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="accordianProject4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData4" aria-expanded="false" aria-controls="accordianProjectData4">
+                              IEEE UVCE Summit 2019
+                              <image class="acc-header-icon-img" src="assets/images/ieee_logo.png" alt="IEEE UVCE Logo"></image>
+                            </button>
+                          </h2>
+                          <div id="accordianProjectData4" class="accordion-collapse collapse" aria-labelledby="accordianProject4" data-bs-parent="#accordianProjects">
+                            <div class="accordion-body">
+                              <div class="row">
+                                <div class="col-md-9">
+                                  <p>Summit is the part of National Annual Technical Fest.</p>
+                                  <p>Summit is a student parliament where participants present their ideas and views on a specific topic to the judges and audience present. 
+                                    Which is conducted in two rounds: in the first one the team has to present a solution to a problem statement provided before the event, in the second the participants have to present a solution to a problem statement provided on spot by the judges.
+                                  </p>
+                                  <p><b>Secured Second Place</b></p>
+                                  <p>Presented ComPhy: Computer Enabled Physiotherapy System.</p>
+                                  <p>Proposed architecture for physiotherapy using Computer Vision and Range-of-Motion analysis.</p>
+                                </div>
+                                <div class="col-md-3">
+                                  <p><a href="https://unstop.com/competitions/summit-impetus-230-university-visvesvaraya-college-of-engineering-uvce-bangalore-642918" target="_blank">Learn More about Summit</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianProject2">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData2" aria-expanded="false" aria-controls="accordianProjectData2">
+                                ACM-ICPC 2019 Asia Regionals - IIT Kharagpur
+                                <image class="acc-header-icon-img" src="assets/images/acm_icpc_logo.png" alt="ACM-ICPC Logo"></image>
+                              </button>
+                            </h2>
+                            <div id="accordianProjectData2" class="accordion-collapse collapse" aria-labelledby="accordianProject2" data-bs-parent="#accordianProjects">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <p>61 Rank in ACM ICPC Asia Regional - IIT Kharagpur</p>
+                                  </div>
+                                  
+                                  <div class="col-md-3">
+                                    <p><a href="https://icpc.global/" target="_blank">Learn More about ACM ICPC</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="accordianProject3">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianProjectData3" aria-expanded="false" aria-controls="accordianProjectData3">
+                                E-Yantra Robotics Competition 2016 by IIT Bombay
+                                <image class="acc-header-icon-img" src="assets/images/eyrc_logo.png" alt="E-Yantra Logo">
+                              </button>
+                            </h2>
+                            <div id="accordianProjectData3" class="accordion-collapse collapse" aria-labelledby="accordianProject3" data-bs-parent="#accordianProjects">
+                              <div class="accordion-body">
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <p><b>Theme: </b>Cross A Crater</p>
+                                    <p><b>Programming Languages: </b>Python, embedded-C</p>
+                                    <p><b>Tools and Libraries: </b>OpenCV, Numpy</p>
+                                    <p><b>Hardware: </b>Firebird-V (ATMEGA-2560), XBee, Servo Motors</p>
+                                    <p>
+                                      In 2016, I participated in the E-yantra Robotics Competition, alongside my friends, where we were given the theme "Cross A Crater." 
+                                      Our task was to program a robot that could cross a crater on a far-off planet by analyzing the two paths around it.
+                                    </p>
+                                    <p>
+                                      The competition was split into two stages, each with multiple tasks. 
+                                      The first stage involved learning about computer vision and algorithms, which was daunting since we lacked experience in both areas. 
+                                      Additionally, we had to code the solutions in Python, which was unfamiliar to us at the time. 
+                                      Nevertheless, we overcame these challenges as a team and completed all the tasks, including the last one, which was the most challenging. 
+                                      It required us to use computer vision to detect a maze, solve it for the shortest path from one end to another, and document the process in code.
+                                    </p>
+                                    <p>
+                                      In addition to coding solutions, we had to ensure the readability of the code and create relevant documentation, which further tested our skills. 
+                                      We were able to complete all the tasks in the first stage and advance to the second stage.
+                                    </p>
+                                    <p>
+                                      The second stage demanded that we construct an arm for a robot provided by the competition's hosts and program the robot to operate it. 
+                                      We also had to detect an arena using a webcam and find the shortest path while avoiding cavities around the crater. 
+                                      The arena had two paths that had to be filled with boulders, which the robot had to pick up one-by-one and fill the cavities to reach the other end.
+                                    </p>
+                                    <p>
+                                      The challenges in the second stage included scanning the arena with a webcam, determining the shortest path across the crater, and generating robot commands based on that path. 
+                                      While we were able to scan the arena and create the robot commands, we could not complete the task on time, as the robot kept diverging from the path. 
+                                      However, the arm we developed was so robust that the robot could lift itself using the arm and perform one-armed push-ups.
+                                    </p>
+                                    <p>
+                                      Overall, the competition was an engaging and challenging experience. 
+                                      I learned valuable technical skills, teamwork, and the satisfaction of working hard for a goal.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <p><a href="https://github.com/ceevaaa/Eyantra-2016" target="_blank">See work done for the competition</a></p>
+                                    <p><a href="https://www.e-yantra.org/" target="_blank">Learn more about E-Yantra</a></p>
+                                    <p><a href="https://www.facebook.com/eyantra/videos/1676239589093543/" target="_blank">Learn more about the theme, Cross-A-Crater</a></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <br>
+            <div class="row" style="margin-top: 20px;">
+              <h1>Skills</h1>
+              <div style="margin-top: 10px;">
+                  <div class="accordion" id="accordianSkils">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="accordianSK1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData1" aria-expanded="false" aria-controls="accordianSKData1">
+                              Programming Languages
+                            </button>
+                          </h2>
+                          <div id="accordianSKData1" class="accordion-collapse collapse" aria-labelledby="accordianSK1" data-bs-parent="#accordianSkils">
+                            <div class="accordion-body">
+                              <div class="row">
+                                <div>
+                                  <ul style="list-style-type:none;" class="wrapped-list">
+                                    <li><a class="btn btn-primary rounded-pill">Python</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">C++</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">C</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">SQL</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">MQL5</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianSK2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData2" aria-expanded="false" aria-controls="accordianSKData2">
+                            Frameworks, Libraries and Tools
+                          </button>
+                        </h2>
+                        <div id="accordianSKData2" class="accordion-collapse collapse" aria-labelledby="accordianSK2" data-bs-parent="#accordianSkils">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div>
+                                <h6>Frameworks</h6>
+                                <ul style="list-style-type:none;" class="wrapped-list">
+                                  <li><a class="btn btn-primary rounded-pill">Docker</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Kubernetes</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Opentelemetry</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Serverless</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Terraform</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Kubeflow</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">MLFlow</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">OpenAPI</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Linux</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Arduino</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Meta Trader 5</a></li>
+                                </ul>
+                                <h6>Libraries</h6>
+                                <ul style="list-style-type:none;" class="wrapped-list">
+                                  <li><a class="btn btn-primary rounded-pill">FastAPI</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Boto3</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Pandas</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Numpy</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Scikit Learn</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Tensorflow</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">PyTorch</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Keras</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">OpenCV</a></li>
+                                </ul>
+                                <h6>Tools</h6>
+                                <ul style="list-style-type:none;" class="wrapped-list">
+                                  <li><a class="btn btn-primary rounded-pill">Git</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">AWS CLI</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">Vim</a></li>
+                                  <li><a class="btn btn-primary rounded-pill">JupyterLab</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianSK4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData4" aria-expanded="false" aria-controls="accordianSKData4">
+                            Cloud
+                          </button>
+                        </h2>
+                        <div id="accordianSKData4" class="accordion-collapse collapse" aria-labelledby="accordianSK4" data-bs-parent="#accordianSkils">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div>
+                                  <ul style="list-style-type:none;" class="wrapped-list">
+                                    <li><a class="btn btn-primary rounded-pill">AWS</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianSK3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData3" aria-expanded="false" aria-controls="accordianSKData3">
+                            Concepts
+                          </button>
+                        </h2>
+                        <div id="accordianSKData3" class="accordion-collapse collapse" aria-labelledby="accordianSK3" data-bs-parent="#accordianSkils">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div>
+                                  <ul style="list-style-type:none;" class="wrapped-list">
+                                    <li><a class="btn btn-primary rounded-pill">Observability</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Object Oriented Programming</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Functional Programming</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Data Structures and Algorithms</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Domain Driven Design</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">REST</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Design Thinking</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Agile</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">DevOps</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Machine Learning</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Deep Learning</a></li>
+                                    <li><a class="btn btn-primary rounded-pill">Computer Vision</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div> 
+            </div>
+            <br>
+            <div class="row" style="margin-top: 20px;">
+              <i>To know more about me, visit the <button type="button" class="btn btn-link align-baseline m-0 px-0 py-0" id="profile-tab-link"  style="font-style: italic;">Miscellaneous section</button>.</i>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="research" role="tabpanel" aria-labelledby="research-tab">
+          <div class="container">
+            <br>
+            <div class="row" style="margin-top: 20px;">
+              <h1>Publications</h1>
+              <div style="margin-top: 10px;">
+                <div class="accordion" id="accordianHobbies">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="accordianHB1">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianHBData1" aria-expanded="false" aria-controls="accordianHBData1">
+                        Reading
+                      </button>
+                    </h2>
+                        <div id="accordianHBData1" class="accordion-collapse collapse" aria-labelledby="accordianHB1" data-bs-parent="#accordianHobbies">
+                          <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-9">
+                                  <p>I have a strong passion for reading non-fiction books. 
+                                    I am drawn to a diverse range of subjects, including life, finance, physics, biology, and design, 
+                                    as I believe that knowledge can be gained from any area and applied universally. 
+                                    In addition, I have a particular interest in mystery and thriller fiction books. 
+                                    On occasion, I also enjoy reading self-help books, which allow me to enhance and refine my lifestyle.
+                                  </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <p><a href="#books">Checkout some of my favorite books</a></p>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>      
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="container">
+            <br>
+            <div class="row" style="margin-top: 20px;">
+              <h1>Hobbies and Interests</h1>
+              <div style="margin-top: 10px;">
+                  <div class="accordion" id="accordianHobbies">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="accordianHB1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianHBData1" aria-expanded="false" aria-controls="accordianHBData1">
+                              Reading
+                            </button>
+                          </h2>
+                          <div id="accordianHBData1" class="accordion-collapse collapse" aria-labelledby="accordianHB1" data-bs-parent="#accordianHobbies">
+                            <div class="accordion-body">
+                              <div class="row">
+                                  <div class="col-md-9">
+                                    <p>I have a strong passion for reading non-fiction books. 
+                                      I am drawn to a diverse range of subjects, including life, finance, physics, biology, and design, 
+                                      as I believe that knowledge can be gained from any area and applied universally. 
+                                      In addition, I have a particular interest in mystery and thriller fiction books. 
+                                      On occasion, I also enjoy reading self-help books, which allow me to enhance and refine my lifestyle.
+                                    </p>
+                                  </div>
+                                  <div class="col-md-3">
+                                      <p><a href="#books">Checkout some of my favorite books</a></p>
+                                  </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianHB2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianHBData2" aria-expanded="false" aria-controls="accordianHBData2">
+                            Doodling
+                          </button>
+                        </h2>
+                        <div id="accordianHBData2" class="accordion-collapse collapse" aria-labelledby="accordianHB2" data-bs-parent="#accordianHobbies">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-9">
+                                <p>Doodling is a favorite pastime of mine as it not only helps me express my creativity but also provides a sense of freedom and relaxation. 
+                                  The simple act of drawing and sketching helps me unwind and de-stress, while also allowing me to explore my artistic side without any pressure or expectations.
+                                </p>
+                              </div>
+                              <div class="col-md-3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianHB3">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianHBData3" aria-expanded="false" aria-controls="accordianHBData3">
+                            Gaming
+                          </button>
+                        </h2>
+                        <div id="accordianHBData3" class="accordion-collapse collapse" aria-labelledby="accordianHB3" data-bs-parent="#accordianHobbies">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-9">
+                                <p>Playing casual games is one of my favorite ways to unwind and tap into my creativity. 
+                                  It's a great way to relax and de-stress while also allowing me to explore my imaginative side.
+                                </p>
+                              </div>
+                              <div class="col-md-3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="accordianHB4">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianHBData4" aria-expanded="false" aria-controls="accordianHBData4">
+                            Formula 1
+                          </button>
+                        </h2>
+                        <div id="accordianHBData4" class="accordion-collapse collapse" aria-labelledby="accordianHB4" data-bs-parent="#accordianHobbies">
+                          <div class="accordion-body">
+                            <div class="row">
+                              <div class="col-md-9">
+                                <p>What I find captivating about Formula 1 is the sheer speed and precision of the cars, which require the drivers to possess exceptional skill and competitive drive. 
+                                  Additionally, the intense rivalries between teams and their drivers add another layer of excitement to the sport. 
+                                  Formula 1 is also highly technical, with even minor advancements in technology and engineering providing a significant competitive advantage, making it an ever-evolving and thrilling spectacle.
+                                </p>
+                              </div>
+                              <div class="col-md-3">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>             
+            </div>
+              <br>            
+            <div class="row" style="margin-top: 20px;">
+              <h1 id="books">Favorite books</h1>
+              <h6>Non-Fictions</h6>
+              <div style="margin-top: 10px;">
+                <ul style="list-style-type:none;" class="wrapped-list">
+                  <li><a class="btn btn-primary rounded-pill">Big Bang-Simon Sinek</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Hyperspace-Michio Kaku</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Surely You're Joking, Mr. Feynman!-Richard Feynman</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Pale Blue Dot-Carl Sagan</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Cosmos-Carl Sagan</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Our Mathematical Universe-Max Tregmark</a></li>
+                  <li><a class="btn btn-primary rounded-pill">The Psychology of Money-Morgan Housel</a></li>
+                  <li><a class="btn btn-primary rounded-pill">We Have No Idea-Jorge Cham & Daniel Whiteson</a></li>
+                </ul>
+              </div>
+              <h6>Fictions</h6>
+              <div>
+                <ul style="list-style-type:none;" class="wrapped-list">
+                  <li><a class="btn btn-primary rounded-pill">The Midnight Library-Matt Haig</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Angels and Demons-Dan Brown</a></li>
+                  <li><a class="btn btn-primary rounded-pill">A Study In Scarlet-Arthur Conan Doyle</a></li>
+                  <li><a class="btn btn-primary rounded-pill">The Hound of the Baskervilles-Arthur Conan Doyle</a></li>
+                  <li><a class="btn btn-primary rounded-pill">The Lost Symbol-Dan Brown</a></li>
+                  <li><a class="btn btn-primary rounded-pill">Murder on the Orient Express-Agatha Christie</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <script>
+      var myTabSelector = document.querySelector('#profile-tab')
+      var tab = new bootstrap.Tab(myTabSelector)
+      var myTabTrigger = document.querySelector('#profile-tab-link')
+      myTabTrigger.addEventListener('click', function (event) {
+        document.scrollingElement.scrollTop = 0;
+        tab.show();
+      })
+    </script>
+    <script>
+      var myTabSelector = document.querySelector('#research-tab')
+      var tab = new bootstrap.Tab(myTabSelector)
+      var myTabTrigger = document.querySelector('#research-tab-link')
+      myTabTrigger.addEventListener('click', function (event) {
+        document.scrollingElement.scrollTop = 0;
+        tab.show();
+      })
+    </script>
+    <!-- <script>
+      var myTabSelector = document.querySelector('#home-tab')
+      var tab = new bootstrap.Tab(myTabSelector)
+      var myTabTrigger = document.querySelector('#home-tab-link')
+      myTabTrigger.addEventListener('click', function (event) {
+        tab.show()
+      })
+    </script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+      $(document).on('click', '#profile-tab-link', function(){
+        // var tabSelector = $(this).attr('href');
+        // var tabSelector = document.querySelector('#profile-tab')
+        // print the tabSelector to the console
+        // console.log(tabSelector);
+        // var tab = new bootstrap.Tab(tabSelector);
+        var triggerEl = document.querySelector('#profile-tab-link');
+        var tab = bootstrap.Tab.getInstance(triggerEl);
+        tab.show();
+      })
+    </script> -->
+</body>
+</html>

@@ -1,7 +1,7 @@
 body {
     /* background-color: #ffffff; */
     /* background-image: linear-gradient(to bottom, #f2f2f2, #ffffff); */
-    background-image: linear-gradient(#f2f2f2, #ffffff, #f2f2f2);
+    /* background-image: linear-gradient(#f2f2f2, #ffffff, #f2f2f2); */
 }
 
 p {
@@ -73,4 +73,25 @@ p {
 
 .wrapped-list li a i{
     font-size: 3em;
+}
+
+.caret {
+    display: inline-block;
+    width: 8px;
+    animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.gradient-text {
+    background: linear-gradient(#e66465, #9198e5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.no-underline {
+    text-decoration: none;
 }
