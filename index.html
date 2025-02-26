@@ -26,7 +26,10 @@
                   <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="proj-tab" data-bs-toggle="tab" data-bs-target="#proj" type="button" role="tab" aria-controls="proj" aria-selected="false">Projects and Competitions</button>
+                    <button class="nav-link" id="proj-tab" data-bs-toggle="tab" data-bs-target="#proj" type="button" role="tab" aria-controls="proj" aria-selected="false">Projects</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="articles-tab" data-bs-toggle="tab" data-bs-target="#articles" type="button" role="tab" aria-controls="articles" aria-selected="false">Blog</button>
                 </li>
                 <li class="nav-item" role="presentation">
                   <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc" type="button" role="tab" aria-controls="misc" aria-selected="false">More</button>
@@ -46,7 +49,7 @@
                 <div class="row">
                     <div class="col-md-9 about-me">
                         <h1>Namaste! 🙏</h1>
-                        <h2>I am Rutu, a <span id="cyclic-text" style="color:cornflowerblue">Student</span></h2>
+                        <h2>I am Rutu, a <span id="cyclic-text" style="color:cornflowerblue"> </span></h2>
                         <p>
                             Currently a Master's student in Computer Science at <u>The George Washington Univeristy.</u> I am researching multiple areas in systems like eBPF in Database Security, Network Function Virtualization, and Energy-Efficient Machine Learning.
                             Before this, I worked in the Machine Learning Operations domain at Syncron where I played roles of DevOps, Data Scientist, Software Developer, Machine Learning Engineer, and more. 
@@ -457,17 +460,386 @@
         </div>
 
         <!-- Research Tab -->
-        <div class="tab-pane fade show active" id="research" role="tabpanel" aria-labelledby="research-tab">
+        <div class="tab-pane fade show" id="research" role="tabpanel" aria-labelledby="research-tab">
+            <div class="container">
+                <div>
+                    <h1>My Research Interests</h1>
+                    <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Kubernetes</li>
+                                <li class="list-group-item">Containers</li>
+                                <li class="list-group-item">Container Network Interface (CNI)</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div> 
+                        <div class="col-md-4">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">eBPF</li>
+                                <li class="list-group-item">Benchmarking</li>
+                                <li class="list-group-item">Performance Analysis and Optimization</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Operating Systems</li>
+                                <li class="list-group-item">Networking</li>
+                                <li class="list-group-item">Machine Learning</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h1>Publications</h1>
+                    <div>
+                        <div class="row" style="margin-top: 30px;">
+                            <h4>eBPF-Based Intrusion Prevention System for Database Servers</h4>
+                            <b>IEEE CloudSummit 2024</b>
+                            <p>
+                                eBPF (Extended Berkeley Packet Filter) is a powerful technology enabling the execution of sandboxed programs at the kernel level. 
+                                This paper investigates its potential to implement security measures for critical database statements, safeguarding them from various threats. 
+                                These threats can include malicious actors, compromised containers, or even insider attempts to tamper with production data.
+                            </p>
+                            <a href="https://ieeexplore.ieee.org/document/10630915" target="_blank">Read the paper</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
         </div>
     
-        <!-- Misc Tab -->
-        <div class="tab-pane fade show active" id="proj" role="tabpanel" aria-labelledby="proj-tab">
+        <!-- Proj Tab -->
+        <div class="tab-pane fade show" id="proj" role="tabpanel" aria-labelledby="proj-tab">
+            <div class="container">
+                <div>
+                    <h4>High Performance HTTP Benchmarking</h4>
+                    <p>
+                        As a part of my research work at the Cloud Systems Lab at the George Washington University I worked on the following projects to help setup an infrastructure for load testing web servers and gathering the metrics. 
+                        This work started with an evaluation of multiple HTTP benchmarking tools and led to a framework that helps with load testing experimentations in a research setting. 
+                    </p>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <b>A qualitative and quantitive analysis of HTTP Benchmarking Tools</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/load-testing" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                This work presents a thorough comparison of different HTTP Benchmarking tools. 
+                                It evaluates and compares the following tools: 
+                                <ul>
+                                    <li><a href="https://github.com/hatoo/oha" target="_blank">Oha</a></li>
+                                    <li><a href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank">Apache Bench (ab)</a></li>
+                                    <li><a href="https://locust.io/" target="_blank">Locust</a></li>
+                                    <li><a href="https://github.com/wg/wrk" target="_blank">Wrk</a></li>
+                                    <li><a href="https://github.com/giltene/wrk2" target="_blank">Wrk2</a></li>
+                                    <li><a href="https://k6.io/" target="_blank">K6</a></li>
+                                </ul>
+                            </p>
+                            <p>
+                                Read the full report on how these tools compare against each other <a href="https://github.com/rutu-sh/load-testing">here.</a>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Experiment Load Testing</b>
+                            <br>
+                            <a href="https://github.com/gwcloudlab/exp-load-test" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                A platform for Load Testing your web services with various configuration. 
+                            </p>
+                            <p>
+                                This is a result of the research work I did as a part of my Research course during my Masters at GWU. 
+                                It provides a repository that lets researchers load test their web servers with variying configurations and gather metrics for the entire duration of the load test. 
+                                <ul>
+                                    <li>Uses K6 for generating loads</li>
+                                    <li>Allows reproducibility of experiments</li>
+                                    <li>Collects metrics for both load generator and the target system</li>
+                                    <li>Generates timestamped metrics</li>
+                                    <li>Generates plots for analysis</li>
+                                    <li>Allows easy configurations and experiments management</li>
+                                </ul>
+                                Read the complete documentation on how to use this platform <a href="https://github.com/gwcloudlab/exp-load-test" target="_blank">here.</a>
+                            </p>
+                        </div>
+                        <div class="col">
 
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h4>CloudLab - Research Tools</h4>
+                    <p>
+                        As a part of my research work at The George Washington University I use the <a href="https://www.cloudlab.us/">CloudLab</a> platform a lot. 
+                        This platform provides researchers with the resources to repeatedly test their work and reproduce it as and when required. 
+                        As someone who constantly retries his work with multiple configurations and breaks the system while playing around with different tools, 
+                        this platform has been of the utmost importance. 
+                    </p>
+                    <p>
+                        <i>Though this work has been built and tested on CloudLab, <u>it provides utilities and tools to work with any Linux machine that can be accessed via ssh.</u></i>
+                    </p>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <b>Cloudlab eBPF</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/cloudlab-ebpf" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                Tools and experiments setup for working with eBPF on CloudLab. 
+                                I built this tool because I was developing eBPF in a Mac environment and did not have a way to compile the eBPF programs 
+                                or even perform <code>go generate</code> type operations without having to perform <code>rsync</code> or <code>scp</code> on the remote machine. 
+                                This tool takes care of that by syncing your code to the remote machine and then runs the relevant <code>go generate</code> commands, 
+                                and then it copies the generated files back to your local machine. This way you can work on eBPF from anywhere. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Remote compilation</li>
+                                    <li>Copying of the generated code</li>
+                                    <li>Install dependencies</li>
+                                    <li>Experimentation</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Cloudlab Kubernetes</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/cloudlab-kubernetes" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                A repository with setup scripts for creating a 3-node Kubernetes cluster with minimum configuration and just a single <code>make</code> command. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Creates a 3-Node Kubernetes cluster</li>
+                                    <li>Copies the <code>.kubeconfig</code> to the local</li>
+                                </ul>
+                                An intention behind this tool is that the initial setup required for Kubernetes can be overwhelming for newcomers. 
+                                This tool bridges that gap and allows them to focus on their goals. 
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Cloudlab DPDK</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/cloudlab-dpdk" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                This repository contains the required scripts for working with DPDK in a remote machine. 
+                                It performs all the inital setup required for DPDK. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Installs DPDK dependencies</li>
+                                    <li>Allocates Hugepages</li>
+                                    <li>Loads the Kernel Modules</li>
+                                    <li>Builds DPDK</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <b>Cloudlab Tools</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/cloudlab-tools" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                This repository is the building block of every cloudlab project that I have built.
+                                It contains the necessary scripts and commands to get working with CloudLab (or any remote machine).
+                                It can be used as a submodule in your experimentation repository and easily integrates while providing tools for ease of development.
+                                I made it lightweight as possible. 
+                                It provides the following features:
+                                <ul>
+                                    <li>
+                                        Installation scripts for: 
+                                            <ol>
+                                                <li>eBPF</li>
+                                                <li>DPDK</li>
+                                                <li>Kubernetes</li>
+                                                <li>Docker</li>
+                                                <li>Go</li>
+                                            </ol>
+                                    </li>
+                                    <li>Tools for remote sync, scp, run command on remote, ssh to host, and more.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Cloudlab Template</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/cloudlab-template" target="_blank">GitHub</a>
+                            <br>
+                            <p>
+                                This is a template repository that comes with all the setup for starting a new project that works with any of the technologies listed above 
+                                or needs some kind of development setup to talk to remote machines. 
+                                It provides the following features:
+                                <ul>
+                                    <li>Submodule capabilities</li>
+                                    <li>Leightweight installation scripts</li>
+                                    <li>Customizations for your own stack</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <h4>Kubernetes</h4>
+                    <p>
+                        Kubernetes has been a topic of interest to me for a long-long time now. And I want to convey the same enthusiasm to everyone who is remotely looking into this area. 
+                        Learning Kubernetes was one of the most difficult taks I did and I want to make it easier for everyone by helping them appreciate the beauty of Kubernetes. 
+                    </p> 
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <b>Opentelemetry Kubernetes Experiments</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/otel-k8s-experiments">GitHub</a>
+                            <br>
+                            <p>
+                                OpenTelemetry and Kubernetes are two of the most popular CNCF projects. 
+                                This repository contains the examples for setting up OpenTelemetry in a Kubernetes cluster. 
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Bootstrapping with Kubernetes</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/bootstrapping-with-kubernetes">GitHub</a>
+                            <br>
+                            <p>
+                                I am writing a Book on Kubernetes. This book is intended for getting started with Kubernetes with only a bare minimum knowledge of containers. 
+                                I am planning to cover both high-level and in-depth topics in Kubernetes. The book is open source and free to read.  
+                            </p>
+                            <p>
+                                The book is available <a href="https://k8s.rutu-sh.com">here.</a>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <b>Bootstrapping with Kubernetes - Examples</b>
+                            <br>
+                            <a href="https://github.com/rutu-sh/bootstrapping-with-kubernetes-examples">GitHub</a>
+                            <br>
+                            <p>
+                                This repository contains the associated examples to go with my Kubernetes book. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="tab-pane fade show" id="articles" role="tabpanel" aria-labelledby="articles-tab">
+            <div class="container">
+                    <!-- <div class="row row-cols-3"> 
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                      </div>
+
+                    </div> -->
+            </div>
         </div>
 
         <!-- Misc Tab -->
-        <div class="tab-pane fade show active" id="misc" role="tabpanel" aria-labelledby="misc-tab">
-
+        <div class="tab-pane fade show" id="misc" role="tabpanel" aria-labelledby="misc-tab">
         </div>
 
     </div>
