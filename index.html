@@ -370,6 +370,7 @@
                                                   <ul style="list-style-type:none;" class="wrapped-list">
                                                     <li><a class="btn btn-outline-primary rounded-pill">Python</a></li>
                                                     <li><a class="btn btn-outline-primary rounded-pill">Go</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">Rust</a></li>
                                                     <li><a class="btn btn-outline-primary rounded-pill">C</a></li>
                                                     <li><a class="btn btn-outline-primary rounded-pill">C++</a></li>
                                                     <li><a class="btn btn-outline-primary rounded-pill">SQL</a></li>
@@ -592,10 +593,36 @@
                     <p>
                         These projects are a part of the Advanced Operating Systems course that I took in Spring'25.
                     </p>
-                    <div class="row row-cols-2">
-                        
+                    <div class="row row-cols-2"> 
+                        <div class="col about-me">
+							<h4>Unix nameserver</h4>
+                            <a href="https://github.com/rutu-sh/advos-unix-service" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+							<p>
+								A nameserver that listens on a named domain socket and listens for connections, where a client connecting to the nameserver can perform one of the three actions: 
+							</p>
+							<ul>
+								<li>Publish a resource</li>
+								<li>Request a resource</li>
+								<li>Exit</li>
+							</ul>
+							<p>
+							The server maintains a list of active connections and the associated resources they provide.
+							</p>
+							<p>
+							Whenever a client requests for a resource, the server asks the associated client with the resource to provide a file descriptor and then it relays the file descriptor to the client requesting for it.
+							</p>
+						</div>	
+                        <div class="col about-me">
+							<h4>Unikernel Proxy</h4>
+
+                            <a href="https://github.com/swarupgt/unikernel-proxy" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+							<p>
+							This is a reverse proxy written and built for unikraft. A reverse proxy is a service used to protect the identity of the servers from externel clients. We aim to provide authentication and load-balancing capabilities in this reverse proxy.
+							</p>
+						</div>
                     </div>
                 </div>
+				<hr>
                 <div>
                     <h1>Distributed RAG Pipeline</h1>
                     <p>
