@@ -534,6 +534,10 @@
             <div class="container">
                 <div>
                     <h1>My Research Interests</h1>
+                    <p>
+                        I'm currently working on energy-efficient scheduling of ML Algorithms on the edge as a part of GWU Cloud Systems Lab (<a href="https://github.com/gwcloudlab">https://github.com/gwcloudlab</a>). 
+                        The following are my research interests. 
+                    </p>
                     <div class="row" style="margin-top: 20px;">
                         <div class="col-md-3">
                             <ul class="list-group list-group-flush">
@@ -584,6 +588,15 @@
         <div class="tab-pane fade show" id="proj" role="tabpanel" aria-labelledby="proj-tab">
             <div class="container">
                 <div>
+                    <h1>OS Projects</h1>
+                    <p>
+                        These projects are a part of the Advanced Operating Systems course that I took in Spring'25.
+                    </p>
+                    <div class="row row-cols-2">
+                        
+                    </div>
+                </div>
+                <div>
                     <h1>Distributed RAG Pipeline</h1>
                     <p>
                         During Spring'25, I took a course on Distributed Systems. This course covered topics like fault tolerance and scalability in distributed systems. 
@@ -595,7 +608,11 @@
                             <a href="https://github.com/rutu-sh/distributed-rag" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
                             <p>
                                 This project aims at building a Distributed Retrieval Augmented Generation pipeline using open source tools. 
-                                It utilized: 
+                                It allows user to upload documents and run natural language query on them. The documents are chunked and embedded into vectors.
+                                The vectors are stored in the vector database Milvus. 
+                                When a user queries, the query is embeded and a similarity search is performed on the corpus stored in the vector database which returns the embedded chunks. 
+                                The chunks are augmented to the query, providing a more complete context to the LLM. 
+                                It utilizes: 
                                 <ol>
                                     <li>
                                         <b>Ollama:</b> as LLM (qwen2.5) and Embedder (all-mini-lm)
@@ -609,8 +626,15 @@
                                     <li>
                                         <b>Kubernetes:</b> for orchestration
                                     </li>
+                                    <li>
+                                        <b>Chatbot Ollama:</b> for frontend (https://github.com/ivanfioravanti/chatbot-ollama.git)
+                                    </li>
                                 </ol>
+
                             </p>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Md06nX_CQVk?si=jDHOUxp1Bw5jTA5R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
