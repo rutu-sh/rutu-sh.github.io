@@ -101,3 +101,10 @@ p {
     padding: 2px;
     margin: 5px;
 }
+
+
+.svg_img {
+  transform: scale(1);
+  width: 10rem;
+  height: 10rem;
+}
