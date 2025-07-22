@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rutu's Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="scripts/text.js"></script>
+</head>
+
+<body>
+    <br>
+
+    <!-- Navbar -->
+    <div class="container">
+        <div style="margin-bottom: 50px;">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="research-tab" data-bs-toggle="tab" data-bs-target="#research" type="button" role="tab" aria-controls="research" aria-selected="false">Research</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="proj-tab" data-bs-toggle="tab" data-bs-target="#proj" type="button" role="tab" aria-controls="proj" aria-selected="false">Projects</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="articles-tab" data-bs-toggle="tab" data-bs-target="#articles" type="button" role="tab" aria-controls="articles" aria-selected="false">Experiments</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc" type="button" role="tab" aria-controls="misc" aria-selected="false">More</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="myTabContent">
+        <!-- Home Tab -->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="container">
+                <br>
+                <!-- About Me -->
+                <div class="row align-items-center">
+                    <div class="col-md-3 text-center">
+                        <figure>
+                            <img src="assets/normalrutu.svg" alt="SVG Image" style="width: 200px; height: auto;" class="img-fluid"/>
+                        </figure>
+                    </div>
+                    <div class="col-md-9">
+                        <h1>Namaste! 🙏</h1>
+                        <h2>I am Rutu, a <span id="cyclic-text" style="color:cornflowerblue"> </span></h2>
+                        <p>
+                            Currently a Master's student in Computer Science at <u>The George Washington Univeristy.</u> I am researching multiple areas in systems like eBPF in Database Security, Network Function Virtualization, and Energy-Efficient Machine Learning.
+                            Before this, I worked in the Machine Learning Operations domain at Syncron where I played roles of DevOps, Data Scientist, Software Developer, Machine Learning Engineer, and more. 
+                            I am adept at learning abstract concepts and applying them across different domains, which helps me come up with creative solutions. 
+                        </p>
+                        <p>
+                            My current interests are: <u>Kubernetes, Networking, eBPF, DPDK, benchmarking, and operating systems</u>
+                        </p>
+                        <ul style="list-style-type:none;" class="wrapped-list">
+                            <li><a href="https://k8s.rutu-sh.com/" target="_blank" class="btn btn-primary rounded-pill no-underline">Read my k8s book</a></li>
+                            <li><a href="https://linkedin.com/in/rutu-sh" target="_blank" class="btn btn-primary rounded-pill no-underline">LinkedIn</a></li>
+                            <li><a href="https://github.com/rutu-sh" target="_blank" class="btn btn-primary rounded-pill no-underline">GitHub</a></li>
+                            <li><a href="resume_ruturaj.pdf" download="resume_ruturaj" class="btn btn-primary rounded-pill no-underline">Download Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <!-- Education -->
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-9">
+                        <div style="margin-top: 20px;">
+                            <div class="accordion" id="accordionEducation">
+                                <h1>Education</h1>
+                                <!-- Graduate -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianEdu0">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianEduData0" aria-expanded="false" aria-controls="accordianEduData0">
+                                          Graduate
+                                          <image class="acc-header-icon-img" src="assets/images/gwlogo.png" alt="Graduate university logo"></image>
+                                        </button>
+                                    </h2>
+                                    <div id="accordianEduData0" class="accordion-collapse collapse" aria-labelledby="accordianEdu0" data-bs-parent="#accordionEducation">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <p><b>Degree: </b>Master of Science</p>
+                                                        <p><b>Major: </b>Computer Science</p>
+                                                        <p><b>University: </b>School of Engineering and Applied Sciences, George Washington University</p>
+                                                        <p><b>Duration: </b>January 2024 - December 2025</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><a href="https://www.gwu.edu/" target="_blank">Learn More about George Washington University</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Graduate -->
+
+                                <!-- Undergraduate -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianEdu1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianEduData1" aria-expanded="false" aria-controls="accordianEduData1">
+                                          Undergraduate
+                                          <image class="acc-header-icon-img" src="assets/images/bu_logo.png" alt="Undergraduate university logo"></image>
+                                        </button>
+                                    </h2>
+                                    <div id="accordianEduData1" class="accordion-collapse collapse" aria-labelledby="accordianEdu1" data-bs-parent="#accordionEducation">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <p><b>Degree: </b>Bachelor of Engineering</p>
+                                                        <p><b>Major: </b>Computer Science</p>
+                                                        <p><b>University: </b>Bangalore University</p>
+                                                        <p><b>Duration: </b>August 2016 - September 2020</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><a href="https://eng.bangaloreuniversity.ac.in/" target="_blank">Learn More about Bangalore University</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Undergraduate -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <figure>
+                            <img src="assets/gradrutu.svg" alt="SVG Image" style="width: 200px; height: auto;" class="img-fluid"/>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Education -->
+                <br>
+                <br>
+                <!-- Professional Experience -->
+                <div class="row" style="margin-top: 20px;">
+                    <h1>Professional Experience</h1>
+                    <div class="col-md-3 text-center">
+                        <br>
+                        <br>
+                        <figure>
+                            <img src="assets/skilledrutu.svg" alt="SVG Image" style="width: 200px; height: auto;" class="img-fluid"/>
+                        </figure>
+                    </div>
+                    <div class="col-md-9">
+                        <div style="margin-top: 20px;">
+                            <div class="accordion" id="accordianWorkExperience">
+
+                                <!-- Graduate Teaching Assistant -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianWE4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData4" aria-expanded="false" aria-controls="accordianWEData4">
+                                            Graduate Teaching Assistant
+                                            <image class="acc-header-icon-img" src="assets/images/gwlogo.png" alt="GW Logo"></image>
+                                        </button>
+                                    </h2> 
+                                    <div id="accordianWEData4" class="accordion-collapse collapse" aria-labelledby="accordianWE4" data-bs-parent="#accordianWorkExperience">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <div>
+                                                        <p><b>Organization: </b>George Washington University</p>
+                                                        <p><b>Position: </b>Graduate Teaching Assistant</p>
+                                                        <p><b>Duration: </b>Sep 2024 - Present</p>
+                                                    </div>
+                                                    <div>
+                                                        <b>Role: </b>
+                                                        <ul>
+                                                          <li><b>Spring'25</b>: Computer architecture and organization</li>
+                                                          <li><b>Fall'24</b>: Systems Programming</li>
+                                                        </ul>
+                                                      </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p><a href="https://sibin.github.io/teaching/csci2410-gwu-systems_programming/fall_2024/index.html" target="_blank">Systems Programming Course</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <!-- Graduate Teaching Assistant -->
+
+                                <!-- Software Engineer Syncron -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianWE1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData1" aria-expanded="false" aria-controls="accordianWEData1">
+                                          Software Engineer
+                                          <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                                        </button>
+                                    </h2>
+                                    <div id="accordianWEData1" class="accordion-collapse collapse" aria-labelledby="accordianWE1" data-bs-parent="#accordianWorkExperience">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <p><b>Organization: </b>Syncron</p>
+                                                        <p><b>Position: </b>Software Engineer</p>
+                                                        <p><b>Duration: </b>Jan 2022 - Dec 2023</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <b>Role: </b>
+                                                            <ul>
+                                                              <li>Member of the Datalab and Syncron.AI team</li>
+                                                              <li>MLOps</li>
+                                                              <li>Acting Data Scientist in the team</li>
+                                                              <li>Understanding the maths behind complex statistical and ML solutions, and building applications and end-to-end pipelines products</li>
+                                                              <li>Creating and maintaining infrastructure and applications to support ML Lifecycle</li>
+                                                            </ul>
+                                                        </p>
+                                                        <p><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                                                        <p>My job as a Software Engineer has evolved to encompass the infrastructure aspect of the MLOps Domain. 
+                                                          Through this, I have become proficient in utilizing Kubernetes and other CNCF-approved resources to create tools and infrastructure that support the Data Science and ML Lifecycle. 
+                                                          Working with Kubernetes and its associated tools has sparked my interest in exploring their potential application in serving ML models as products.
+                                                        </p>
+                                                        <p>
+                                                          The research paper titled <b>Hidden Technical Debt in Machine Learning Systems</b> by Google researchers has been a source of inspiration for me. 
+                                                          The paper highlights the challenges of implementing ML systems in practical applications. 
+                                                          The paper's diagram portrays the "ML Code" component as relatively small, which underscores the need for extensive post-coding work to realize its full potential. 
+                                                          This principle resonates with my team's approach to providing value to our organization. 
+                                                          My responsibilities also include designing and developing microservices that support the ML workflow and exploring various ML tools through experimentation.
+                                                        </p>
+                                                        <p>
+                                                          Another fascinating aspect of my work involves constructing advanced analytics models for new price-related applications. 
+                                                          This particular facet of my job demands a deep understanding of complex mathematical and ML concepts, which I then translate into programming and visualization. 
+                                                          The models are implemented as end-to-end pipelines with analytical dashboards that visualize the results. 
+                                                          One notable contribution of mine was the development of a solution called <b>Top-Down Price Optimization.</b>
+                                                          This solution combined enterprise pricing with multivariate calculus and business rules to provide a tool for strategically adjusting prices. 
+                                                          The objective was to assist businesses in optimizing prices to achieve a desired increase in revenue and maximize profits while adhering to relevant business constraints.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                <!-- Software Engineer Syncron -->
+
+                                <!-- Associate Software Engineer Syncron -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianWE2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData2" aria-expanded="false" aria-controls="accordianWEData2">
+                                            Associate Software Developer
+                                            <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                                        </button>
+                                    </h2>
+                                    <div id="accordianWEData2" class="accordion-collapse collapse" aria-labelledby="accordianWE2" data-bs-parent="#accordianWorkExperience">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <p><b>Organization: </b>Syncron</p>
+                                                        <p><b>Position: </b>Associate Software Developer</p>
+                                                        <p><b>Duration: </b>Jan 2021 - Dec 2021</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <b>Role: </b>
+                                                            <ul>
+                                                                <li>Part of the Datalab and Analytics BI team</li>
+                                                                <li>Designing and maintaining end-to-end statistical and ML Pipelines</li>
+                                                                <li>Developing and maintaining Analytical and BI products and tools around them</li>
+                                                            </ul>
+                                                        </p>
+                                                        <p><b>Tech Stack: </b>AWS, Docker, Kubeflow, Python</p>
+                                                        <p>
+                                                            After completing a year-long internship, I was promoted to the position of Associate Software Developer and my responsibilities expanded to include the MLOps domain. 
+                                                            In addition to developing and maintaining BI tools and services, I worked on developing price-related use cases. 
+                                                            This involved understanding business requirements, analyzing customer data, and developing end-to-end pipelines to handle the entire process, from reading raw data to generating analytical dashboards for customers.
+                                                        </p>
+                                                        <p>
+                                                            As a member of the Datalab team at Syncron, I gained valuable knowledge about applying Object-Oriented Programming principles beyond programming. 
+                                                            Concepts such as Abstraction and Polymorphism were used in designing and planning the architecture. 
+                                                            Additionally, I became familiar with the concept of functional programming, which allowed me to write code in terms of functions that were more readable and easy to follow.
+                                                        </p>
+                                                        <p>
+                                                            Working on planning and designing solutions also exposed me to the concept of Domain-Driven Design. 
+                                                            I learned how to design a solution based on the problem's domain, and then code it using the principles of OOP and functional programming.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Associate Software Engineer Syncron -->
+
+                                <!-- Intern -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianWE3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianWEData3" aria-expanded="false" aria-controls="accordianWEData3">
+                                            Intern
+                                            <image class="acc-header-icon-img" src="assets/images/syncron_logo.png" alt="Syncron Logo"></image>
+                                        </button>
+                                    </h2>
+                                    <div id="accordianWEData3" class="accordion-collapse collapse" aria-labelledby="accordianWE3" data-bs-parent="#accordianWorkExperience">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <div>
+                                                        <p><b>Organization: </b>Syncron</p>
+                                                        <p><b>Position: </b>Intern</p>
+                                                        <p><b>Duration: </b>Jan 2020 - Dec 2020</p>
+                                                    </div>
+                                                    <div>
+                                                        <p>
+                                                            <b>Role: </b>
+                                                            <ul>
+                                                                <li>Part of the Analytics BI team</li>
+                                                                <li>Developing and maintaining Analytical and BI products and tools around them</li>
+                                                                <li>Developing and mainting microservices</li>
+                                                            </ul>
+                                                        </p>
+                                                        <p><b>Tech Stack: </b>AWS, Serverless, Docker, Python</p>
+                                                        <p>
+                                                            My internship provided my first professional exposure to the world of IT, where I gained valuable knowledge regarding software development and deployment as a service. I was able to hone my skills in writing readable and maintainable code while working extensively with Python, Serverless, and Docker. The software I developed primarily served to facilitate business intelligence work for customers, providing me with valuable insights into how data is visualized to meet business needs and draw insights.
+                                                        </p>
+                                                        <p>
+                                                            Moreover, I had the opportunity to be involved in the design and development of microservices for internal use by various teams, which allowed me to expand my technical proficiency further.
+                                                        </p> 
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <p><a href="https://www.syncron.com/" target="_blank">Learn More about Syncron</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Intern -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Experience -->
+
+                <!-- Skills -->
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-9">
+                        <h1>Skills</h1>
+                        <div style="margin-top: 20px;">
+                            <div class="accordion" id="accordianSkils">
+                                <!-- Pogramming Languages -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianSK1">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData1" aria-expanded="false" aria-controls="accordianSKData1">
+                                          Programming Languages
+                                        </button>
+                                    </h2>
+                                    <div id="accordianSKData1" class="accordion-collapse collapse" aria-labelledby="accordianSK1" data-bs-parent="#accordianSkils">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div>
+                                                  <ul style="list-style-type:none;" class="wrapped-list">
+                                                    <li><a class="btn btn-outline-primary rounded-pill">Python</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">Go</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">Rust</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">C</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">C++</a></li>
+                                                    <li><a class="btn btn-outline-primary rounded-pill">SQL</a></li>
+                                                  </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Pogramming Languages -->
+
+                                <!-- Frameworks, Libraries, and Tools -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianSK2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData2" aria-expanded="false" aria-controls="accordianSKData2">
+                                          Systems
+                                        </button>
+                                    </h2>
+                                    <div id="accordianSKData2" class="accordion-collapse collapse" aria-labelledby="accordianSK2" data-bs-parent="#accordianSkils">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div>
+                                                    <b>Containerization and Orchestration</b>
+                                                    <br>
+                                                    <br>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Docker</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Kubernetes</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">KubeFlow</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">KNative</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Istio</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">KServe</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">ArgoCD</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Triggermesh</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Helm</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <b>Systems, Networking, and Benchmarking</b>
+                                                    <br>
+                                                    <br>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Linux</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">eBPF</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">XDP</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">DPDK</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">perf</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">bpftrace</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">k6</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div>
+                                                    <b>Observability</b>
+                                                    <br>
+                                                    <br>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">OpenTelemetry</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">ClickHouse</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Grafana</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Frameworks, Libraries, and Tools -->
+
+                                <!-- Cloud -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianSK4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData4" aria-expanded="false" aria-controls="accordianSKData4">
+                                            Cloud
+                                        </button>
+                                    </h2>
+                                    <div id="accordianSKData4" class="accordion-collapse collapse" aria-labelledby="accordianSK4" data-bs-parent="#accordianSkils">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">AWS</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Cloud -->
+
+
+                                <!-- Domain Expertise -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianSK5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData5" aria-expanded="false" aria-controls="accordianSKData5">
+                                            Domain Expertise
+                                        </button>
+                                    </h2>
+                                    <div id="accordianSKData5" class="accordion-collapse collapse" aria-labelledby="accordianSK5" data-bs-parent="#accordianSkils">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Networking</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Observability</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Benchmarking</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Business Intelligence</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Machine Learning</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">MLOps</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Systems</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">DataOps</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Domain Expertise -->
+
+
+                                <!-- Tools -->
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="accordianSK6">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordianSKData6" aria-expanded="false" aria-controls="accordianSKData6">
+                                            Tools
+                                        </button>
+                                    </h2>
+                                    <div id="accordianSKData6" class="accordion-collapse collapse" aria-labelledby="accordianSK6" data-bs-parent="#accordianSkils">
+                                        <div class="accordion-body">
+                                            <div class="row">
+                                                <div>
+                                                    <ul style="list-style-type:none;" class="wrapped-list">
+                                                        <li><a class="btn btn-outline-primary rounded-pill">GitHub Actions</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">MLFlow</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Pandas</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Numpy</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Scikit-Learn</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Keras</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Terraform</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">FastAPI</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Serverless</a></li>
+                                                        <li><a class="btn btn-outline-primary rounded-pill">Jupyter</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Tools -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <br>
+                        <br>
+                        <figure>
+                            <img src="assets/dumbelrutu.svg" alt="SVG Image" style="width: 400px; height: auto;" class="img-fluid"/>
+                        </figure>
+                    </div>
+                </div>
+                <!-- Skills -->
+            </div>
+        </div>
+
+        <!-- Research Tab -->
+        <div class="tab-pane fade show" id="research" role="tabpanel" aria-labelledby="research-tab">
+            <div class="container">
+                <div>
+                    <div class="row">
+                        <div class="col-md-3 text-center">
+                            <figure>
+                                <img src="assets/projectrutu.svg" alt="SVG Image" style="width: 400px; height: auto;" class="img-fluid"/>
+                            </figure>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="row">
+                                <h1>My Research Interests</h1>
+                                <br>
+                                <br>
+                                <br>
+                                <p>
+                                    I'm currently working on energy-efficient scheduling of ML Algorithms on the edge as a part of GWU Cloud Systems Lab (<a href="https://github.com/gwcloudlab">https://github.com/gwcloudlab</a>). 
+                                    The following are my research interests. 
+                                </p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Kubernetes</li>
+                                        <li class="list-group-item">Containers</li>
+                                        <li class="list-group-item">Container Network Interface (CNI)</li>
+                                        <li class="list-group-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">eBPF</li>
+                                        <li class="list-group-item">Linux Kernel</li>
+                                        <li class="list-group-item">Energy efficiency</li>
+                                        <li class="list-group-item"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Operating Systems</li>
+                                        <li class="list-group-item">Networking</li>
+                                        <li class="list-group-item">Benchmarking</li>
+                                        <li class="list-group-item"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row" style="margin-top: 20px;">
+                        <div class="col-md-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">eBPF</li>
+                                <li class="list-group-item">Benchmarking</li>
+                                <li class="list-group-item">Performance Analysis and Optimization</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Operating Systems</li>
+                                <li class="list-group-item">Networking</li>
+                                <li class="list-group-item">Machine Learning</li>
+                                <li class="list-group-item"></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                </div>
+                <br>
+                <div>
+                    <h1>Publications</h1>
+                    <div>
+                        <div class="row" style="margin-top: 30px;">
+                            <h4>eBPF-Based Intrusion Prevention System for Database Servers</h4>
+                            <b>IEEE CloudSummit 2024</b>
+                            <p>
+                                eBPF (Extended Berkeley Packet Filter) is a powerful technology enabling the execution of sandboxed programs at the kernel level. 
+                                This paper investigates its potential to implement security measures for critical database statements, safeguarding them from various threats. 
+                                These threats can include malicious actors, compromised containers, or even insider attempts to tamper with production data.
+                            </p>
+                            <a class="btn btn-primary" href="https://ieeexplore.ieee.org/document/10630915" target="_blank">View Publication</a>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Proj Tab -->
+        <div class="tab-pane fade show" id="proj" role="tabpanel" aria-labelledby="proj-tab">
+            <div class="container">
+                <!-- <figure>
+                    <img src="assets/idrutu.svg" alt="SVG Image" style="width: 100px; height: auto;" class="img-fluid"/>
+                </figure> -->
+                <div>
+                    <h1>OS Projects</h1>
+                    <p>
+                        These projects are a part of the Advanced Operating Systems course that I took in Spring'25.
+                    </p>
+                    <div class="row row-cols-2"> 
+                        <div class="col about-me">
+							<h4>Unix nameserver</h4>
+                            <a href="https://github.com/rutu-sh/advos-unix-service" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+							<p>
+								A nameserver that listens on a named domain socket and listens for connections, where a client connecting to the nameserver can perform one of the three actions: 
+							</p>
+							<ul>
+								<li>Publish a resource</li>
+								<li>Request a resource</li>
+								<li>Exit</li>
+							</ul>
+							<p>
+							The server maintains a list of active connections and the associated resources they provide.
+							</p>
+							<p>
+							Whenever a client requests for a resource, the server asks the associated client with the resource to provide a file descriptor and then it relays the file descriptor to the client requesting for it.
+							</p>
+						</div>	
+                        <div class="col about-me">
+							<h4>Unikernel Proxy</h4>
+
+                            <a href="https://github.com/swarupgt/unikernel-proxy" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+							<p>
+							This is a reverse proxy written and built for unikraft. A reverse proxy is a service used to protect the identity of the servers from externel clients. We aim to provide authentication and load-balancing capabilities in this reverse proxy.
+							</p>
+						</div>
+                    </div>
+                </div>
+				<hr>
+                <div>
+                    <h1>Distributed RAG Pipeline</h1>
+                    <p>
+                        During Spring'25, I took a course on Distributed Systems. This course covered topics like fault tolerance and scalability in distributed systems. 
+                        This project was a part of the course where I implemented the concepts I learned on Distributed Systems. 
+                    </p>
+                    <div class="row row-cols-2">
+                        <div class="col about-me">
+                            <h4>A Distributed RAG Pipeline</h4>
+                            <a href="https://github.com/rutu-sh/distributed-rag" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <p>
+                                This project aims at building a Distributed Retrieval Augmented Generation pipeline using open source tools. 
+                                It allows user to upload documents and run natural language query on them. The documents are chunked and embedded into vectors.
+                                The vectors are stored in the vector database Milvus. 
+                                When a user queries, the query is embeded and a similarity search is performed on the corpus stored in the vector database which returns the embedded chunks. 
+                                The chunks are augmented to the query, providing a more complete context to the LLM. 
+                                It utilizes: 
+                                <ol>
+                                    <li>
+                                        <b>Ollama:</b> as LLM (qwen2.5) and Embedder (all-mini-lm)
+                                    </li>
+                                    <li>
+                                        <b>Langfuse:</b> for Observability (tracing, metrics, etc)
+                                    </li>
+                                    <li>
+                                        <b>Milvus:</b> as a Vector Database
+                                    </li>
+                                    <li>
+                                        <b>Kubernetes:</b> for orchestration
+                                    </li>
+                                    <li>
+                                        <b>Chatbot Ollama:</b> for frontend (https://github.com/ivanfioravanti/chatbot-ollama.git)
+                                    </li>
+                                </ol>
+
+                            </p>
+                        </div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Md06nX_CQVk?si=jDHOUxp1Bw5jTA5R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div>
+                    <h1>High Performance HTTP Benchmarking</h1>
+                    <p>
+                        As a part of my research work at the Cloud Systems Lab at the George Washington University I worked on the following projects to help setup an infrastructure for load testing web servers and gathering the metrics. 
+                        This work started with an evaluation of multiple HTTP benchmarking tools and led to a framework that helps with load testing experimentations in a research setting. 
+                    </p>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <h4>A qualitative and quantitive analysis of HTTP Benchmarking Tools</h4>
+                            <a href="https://github.com/rutu-sh/load-testing" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This work presents a thorough comparison of different HTTP Benchmarking tools. 
+                                It evaluates and compares the following tools: 
+                                <ul>
+                                    <li><a href="https://github.com/hatoo/oha" target="_blank">Oha</a></li>
+                                    <li><a href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank">Apache Bench (ab)</a></li>
+                                    <li><a href="https://locust.io/" target="_blank">Locust</a></li>
+                                    <li><a href="https://github.com/wg/wrk" target="_blank">Wrk</a></li>
+                                    <li><a href="https://github.com/giltene/wrk2" target="_blank">Wrk2</a></li>
+                                    <li><a href="https://k6.io/" target="_blank">K6</a></li>
+                                </ul>
+                            </p>
+                            <p>
+                                Read the full report on how these tools compare against each other <a href="https://github.com/rutu-sh/load-testing" target="_blank">here.</a>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Experiment Load Testing</h4>
+                            <a href="https://github.com/gwcloudlab/exp-load-test" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                A platform for Load Testing your web services with various configuration. 
+                            </p>
+                            <p>
+                                This is a result of the research work I did as a part of my Research course during my Masters at GWU. 
+                                It provides a repository that lets researchers load test their web servers with variying configurations and gather metrics for the entire duration of the load test. 
+                                <ul>
+                                    <li>Uses K6 for generating loads</li>
+                                    <li>Allows reproducibility of experiments</li>
+                                    <li>Collects metrics for both load generator and the target system</li>
+                                    <li>Generates timestamped metrics</li>
+                                    <li>Generates plots for analysis</li>
+                                    <li>Allows easy configurations and experiments management</li>
+                                </ul>
+                                Read the complete documentation on how to use this platform <a href="https://github.com/gwcloudlab/exp-load-test" target="_blank">here.</a>
+                            </p>
+                        </div>
+                        <div class="col">
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h1>CloudLab - Research Tools</h2>
+                    <p>
+                        As a part of my research work at The George Washington University I use the <a href="https://www.cloudlab.us/">CloudLab</a> platform a lot. 
+                        This platform provides researchers with the resources to repeatedly test their work and reproduce it as and when required. 
+                        As someone who constantly retries his work with multiple configurations and breaks the system while playing around with different tools, 
+                        this platform has been of the utmost importance. 
+                    </p>
+                    <p>
+                        <i>Though this work has been built and tested on CloudLab, <u>it provides utilities and tools to work with any Linux machine that can be accessed via ssh.</u></i>
+                    </p>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <h4>Cloudlab eBPF</h4>
+                            <a href="https://github.com/rutu-sh/cloudlab-ebpf" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                Tools and experiments setup for working with eBPF on CloudLab. 
+                                I built this tool because I was developing eBPF in a Mac environment and did not have a way to compile the eBPF programs 
+                                or even perform <code>go generate</code> type operations without having to perform <code>rsync</code> or <code>scp</code> on the remote machine. 
+                                This tool takes care of that by syncing your code to the remote machine and then runs the relevant <code>go generate</code> commands, 
+                                and then it copies the generated files back to your local machine. This way you can work on eBPF from anywhere. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Remote compilation</li>
+                                    <li>Copying of the generated code</li>
+                                    <li>Install dependencies</li>
+                                    <li>Experimentation</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Cloudlab Kubernetes</h4>
+                            <a href="https://github.com/rutu-sh/cloudlab-kubernetes" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                A repository with setup scripts for creating a 3-node Kubernetes cluster with minimum configuration and just a single <code>make</code> command. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Creates a 3-Node Kubernetes cluster</li>
+                                    <li>Copies the <code>.kubeconfig</code> to the local</li>
+                                    <li>Sets up the CNI</li>
+                                    <li>Can be customized to manage more/less nodes in the cluster</li>
+                                </ul>
+                                An intention behind this tool is that the initial setup required for Kubernetes can be overwhelming for newcomers. 
+                                This tool bridges that gap and allows them to focus on their goals. 
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Cloudlab DPDK</h4>
+                            <a href="https://github.com/rutu-sh/cloudlab-dpdk" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This repository contains the required scripts for working with DPDK in a remote machine. 
+                                It performs all the inital setup required for DPDK. 
+                                This tool provides the following features:
+                                <ul>
+                                    <li>Installs DPDK dependencies</li>
+                                    <li>Allocates Hugepages</li>
+                                    <li>Loads the Kernel Modules</li>
+                                    <li>Builds DPDK</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <h4>Cloudlab Tools</h4>
+                            <a href="https://github.com/rutu-sh/cloudlab-tools" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This repository is the building block of every cloudlab project that I have built.
+                                It contains the necessary scripts and commands to get working with CloudLab (or any remote machine).
+                                It can be used as a submodule in your experimentation repository and easily integrates while providing tools for ease of development.
+                                I made it lightweight as possible. 
+                                It provides the following features:
+                                <ul>
+                                    <li>
+                                        Installation scripts for: 
+                                            <ol>
+                                                <li>eBPF</li>
+                                                <li>DPDK</li>
+                                                <li>Kubernetes</li>
+                                                <li>Docker</li>
+                                                <li>Go</li>
+                                            </ol>
+                                    </li>
+                                    <li>Tools for remote sync, scp, run command on remote, ssh to host, and more.</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Cloudlab Template</h4>
+                            <a href="https://github.com/rutu-sh/cloudlab-template" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This is a template repository that comes with all the setup for starting a new project that works with any of the technologies listed above 
+                                or needs some kind of development setup to talk to remote machines. 
+                                It provides the following features:
+                                <ul>
+                                    <li>Submodule capabilities</li>
+                                    <li>Leightweight installation scripts</li>
+                                    <li>Customizations for your own stack</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h1>Kubernetes</h1>
+                    <p>
+                        Kubernetes has been a topic of interest to me for a long-long time now. And I want to convey the same enthusiasm to everyone who is remotely looking into this area. 
+                        Learning Kubernetes was one of the most difficult taks I did and I want to make it easier for everyone by helping them appreciate the beauty of Kubernetes. 
+                    </p> 
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <h4>Opentelemetry Kubernetes Experiments</h4>
+                            <a href="https://github.com/rutu-sh/otel-k8s-experiments" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                OpenTelemetry and Kubernetes are two of the most popular CNCF projects. 
+                                This repository contains the examples for setting up OpenTelemetry in a Kubernetes cluster. 
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Bootstrapping with Kubernetes</h4>
+                            <a href="https://github.com/rutu-sh/bootstrapping-with-kubernetes" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                I am writing a Book on Kubernetes. This book is intended for getting started with Kubernetes with only a bare minimum knowledge of containers. 
+                                I am planning to cover both high-level and in-depth topics in Kubernetes. The book is open source and free to read.  
+                            </p>
+                            <p>
+                                The book is available <a href="https://k8s.rutu-sh.com" target="_blank">here.</a>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Bootstrapping with Kubernetes - Examples</h4>
+                            <a href="https://github.com/rutu-sh/bootstrapping-with-kubernetes-examples" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This repository contains the associated examples to go with my Kubernetes book. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h1>Procman</h1>
+                    <p>
+                        This is my own implementation of Kubernetes and Docker. I am building a sereis of projects to mimic the functionalities of Docker and Kubernetes.
+                        This is an ongoing work and currently it is focused on building a containerization platform from scratch. 
+                        The intended result of this work will be a set of tools to orchestrate <code>Processes</code> in a cluster. 
+                        Though it started off as a way for me to learn the inner workings of Docker and Kubernetes, I am learning new technologies everday and hence 
+                            planning to add my own customizations like: <u> Process migration with criu, CNI using eBPF, Native DPDK/SPDK/RDMA support</u>
+                    </p>
+                    <br>
+                    <div class="row row-cols-3">
+                        <div class="col about-me">
+                            <h4>Procman CLI</h4>
+                            <a href="https://github.com/rutu-sh/procman" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This is the <code>Go-based</code> interface for the Procman tool. It helps set up the environment for containerization using user-provided inputs. 
+                                It provides the following features:
+                                <ul>
+                                    <li>Manage Images using Alpine Minirootfs</li>
+                                    <li>Creates filesystem for containers</li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div class="col about-me">
+                            <h4>Procman Daemon</h4>
+                            <a href="https://github.com/rutu-sh/procmand" target="_blank"><button class="btn btn-primary rounded-pill my-2 no-underline">GitHub</button></a>
+                            <br>
+                            <br>
+                            <p>
+                                This will be the long-running daemon for procman. It sets up the isolation for the container processes and starts their run. 
+                                This is an important part of the Procman ecosystem as it has complete control over the underlying container processes.
+                                It provides the following features:
+                                <ul>
+                                    <li>Trigger the run for containers</li>
+                                    <li>Manage namespaces (i.e. Network, MNT, Chroot, etc)</li>
+                                    <li>Set up networking for the containers ( via veth )</li>
+                                    <li>Monitor the run of processes - restart if required.</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="tab-pane fade show" id="articles" role="tabpanel" aria-labelledby="articles-tab">
+            <div class="container">
+                    <h1>DPDK - Experiments and code walkthroughs</h1>
+                    <br>
+
+                    <!-- row 1 -->
+                    <div class="row row-cols-3"> 
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <div class="card-body">
+                              <h5 class="card-title">Installing DPDK and running the Helloworld application.</h5>
+                              <p class="card-text">My first experiment with DPDK</p>
+                              <a href="https://gwu-systems.notion.site/Installing-DPDK-and-running-the-helloworld-application-98ee5000a0cd4e72bde4d0ded3beac4b" class="btn btn-primary" target="_blank">Read Article</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <div class="card-body">
+                              <h5 class="card-title">Breaking down the Helloworld DPDK Application</h5>
+                              <p class="card-text">Understanding the parts of DPDK and the code for a basic DPDK application.</p>
+                              <a href="https://gwu-systems.notion.site/Breaking-down-the-DPDK-helloworld-Application-17a7ec16ff934d5a933ba61e5bd952f0" class="btn btn-primary" target="_blank">Read Article</a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card" style="width: full;">
+                            <div class="card-body">
+                              <h5 class="card-title">Binding Network ports to DPDK</h5>
+                              <p class="card-text">An experiment on binding network ports to DPDK and running the <code>simple-lan</code> experiment</p>
+                              <a href="https://gwu-systems.notion.site/Binding-Network-ports-to-DPDK-c1062e4ccae146a3a5e7afc414e9a16c" class="btn btn-primary" target="_blank">Read Article</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <!-- row 1 end -->
+
+                    <!-- row 2 -->
+                    <div class="row row-cols-3"> 
+
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Running the basic forwarding Application with DPDK</h5>
+                                  <p class="card-text">
+                                    This experiment covers running the <a target="_blank", href="https://doc.dpdk.org/guides/sample_app_ug/skeleton.html">Basic Port Forwarding Sample Application</a> from DPDK.
+                                    It binds and pairs the ports and forwards packets betwen them.
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/DPDK-Running-the-Basic-Forwarding-Sample-Application-example-d62db44a600546ed831dc3358e685f49" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Breaking down the Basic Port forwarding application with DPDK</h5>
+                                  <p class="card-text">
+                                    This covers an explanation of hte basic port forwarding applicaiton built with DPDK. 
+                                    It contains a detailed explanation of every component involved. 
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Breaking-down-the-DPDK-simple-port-forwarding-application-bcea69ad72ef4db2a41c9ccaa76a8170" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Modifying the basic port forwarding application</h5>
+                                  <p class="card-text">
+                                    This article shows how the basic port forwarding application from DPDK can be modified to print the queries sent to the MySQL database. 
+
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Breaking-down-the-DPDK-simple-port-forwarding-application-bcea69ad72ef4db2a41c9ccaa76a8170" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <!-- row 2 end -->
+
+                    <br>
+                    <hr>
+                    <h1>eBPF - Experiments and Code walkthroughs</h1>
+                    <br>
+                    <div class="row row-cols-3"> 
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trying out eBPF and XDP</h5>
+                                  <p class="card-text">
+                                    My first experiment with eBPF and XDP. 
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-XDP-2bf3bd9430e5412caf96f15c51aaef75" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Breaking down the Basic 01 XDP application</h5>
+                                  <p class="card-text">
+                                    This contains a detailed walkthrough of the Basic 01 XDP application. 
+                                    It contains the line-by-line explanation of the underlying C code. 
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Tracing-sys_enter_execve-syscall-tracepoint-using-eBPF-Go-and-ringbuf-b08ab172b6c441e199570a692b341ace" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Trying out eBPF and Go</h5>
+                                  <p class="card-text">
+                                    Learning how to use eBPF with Go. This experiment led me to building <code>cloudlab-tools</code>, <code>cloudlab-ebpf</code>, and all the other associated projects. 
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-Go-9874d1d6b7e9483e8381acffb517aff5" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" style="width: full;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Tracing syscalls with eBPF and Go</h5>
+                                  <p class="card-text">
+                                    An example of how eBPf can be used to trace system calls. It contains detailed explanation of my work with some problems and resolutions. 
+                                    This experiment was done using <code>cloudlab-tools</code>.
+                                  </p>
+                                  <a href="https://gwu-systems.notion.site/Tracing-sys_enter_execve-syscall-tracepoint-using-eBPF-Go-and-ringbuf-b08ab172b6c441e199570a692b341ace" class="btn btn-primary" target="_blank">Read Article</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+        <!-- Misc Tab -->
+        <div class="tab-pane fade show" id="misc" role="tabpanel" aria-labelledby="misc-tab">
+            <div class="text-center">
+                <figure>
+                    <img src="assets/deskrutu.svg" alt="SVG Image" style="width: 800px; height: auto;" class="img-fluid"/>
+                </figure>
+                <h4>
+                    work in progress ... 
+                </h4>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
