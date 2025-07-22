@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rutu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/flip.js"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <style>
+        body {
+            background-image: radial-gradient(#eee 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: top left;
+            font-family: monospace;
+        }
+    </style>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Rutu's Portfolio</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    <br>
-
-    <!-- Navbar -->
-    <div class="container">
-        <div style="margin-bottom: 50px;">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Home</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="research-tab" href="research.html" role="tab" aria-controls="research" aria-selected="true">Research</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="proj-tab" data-bs-toggle="tab" data-bs-target="#proj" type="button" role="tab" aria-controls="proj" aria-selected="false">Projects and Competitions</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="articles-tab" data-bs-toggle="tab" data-bs-target="#articles" type="button" role="tab" aria-controls="articles" aria-selected="false">Blog</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="misc-tab" data-bs-toggle="tab" data-bs-target="#misc" type="button" role="tab" aria-controls="misc" aria-selected="false">More</button>
-                </li>
-            </ul>
+  <body class="bg-white text-black">
+    <!-- Top Nav -->
+    <nav class="border-b border-black px-4 py-3 font-bold uppercase text-base flex justify-between">
+        <div class="flex gap-4">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="research.html" class="bg-black text-white px-2 py-1 rounded">Research</a>
+            <a href="project.html" class="hover:underline">Projects</a>
+            <a href="#" class="hover:underline">Experiments</a>
+            <a href="#" class="hover:underline">More</a>
         </div>
-    </div>
+    </nav>
 
-    <!-- Tab Content -->
-    <div class="tab-content" id="myTabContent">
-        <!-- Research Tab -->
-        <div class="tab-pane fade show" id="research" role="tabpanel" aria-labelledby="research-tab">
-            <div class="container">
-                <div>
-                    <h1>My Research Interests</h1>
-                    
+    <div class="p-16">
+        <section class="grid md:grid-cols-3 gap-8">
+            <div class="col-span-1 flex justify-center items-start pt-10">
+                <img src="assets/projectrutu.svg" alt="Rutu" class="h-80 object-contain"/>
+            </div>
+            <div class="col-span-2 space-y-4">
+                <h1 class="text-4xl font-bold">
+                    My Research Interests
+                </h1>
+                <p class="text-base">
+                    I'm currently working on energy-efficient scheduling of ML Algorithms on the edge as a part of GWU Cloud Systems Lab (<a href="https://github.com/gwcloudlab" class="underline text-blue-500">https://github.com/gwcloudlab</a>). 
+                    The following are my research interests. 
+                </p>
+                <section class="grid md:grid-cols-3 gap-10 pt-8">
+                    <button class="border-2 border-black text-black py-2 px-4">Kubernetes</button>
+                    <button class="border-2 border-black py-2 px-4">eBPF</button>
+                    <button class="border-2 border-black py-2 px-4">Operating Systems</button>
+                    <button class="border-2 border-black py-2 px-4">Containers</button>
+                    <button class="border-2 border-black py-2 px-4">Linux Kernel</button>
+                    <button class="border-2 border-black py-2 px-4">Networking</button>
+                    <button class="border-2 border-black py-2 px-4">Container Network Interface (CNI)</button>
+                    <button class="border-2 border-black py-2 px-4">Energy Efficiency</button>
+                    <button class="border-2 border-black py-2 px-4">Benchmarking</button>
+                </section>
+            </div>
+        </section>
+        <div>
+            <h1 class="text-4xl font-bold pt-10">
+                Publications
+            </h1>
+            <div>
+                <h2 class="text-2xl font-bold pt-4">eBPF-Based Intrusion Prevention System for Database Servers</h2>
+                <h2 class="text-lg font-bold">IEEE CloudSummit 2024</h2>
+                <p class="text-base pt-2 text-justify">
+                    eBPF (Extended Berkeley Packet Filter) is a powerful technology enabling the execution of sandboxed programs at the kernel level. This paper investigates its potential to implement security measures for critical database statements, safeguarding them from various threats. These threats can include malicious actors, compromised containers, or even insider attempts to tamper with production data.
+                </p>
+                <div class="pt-2">
+                    <button class="bg-black text-white py-2 px-4"><a href="https://ieeexplore.ieee.org/document/10630915" target="_blank">View Publication</a></button>
                 </div>
             </div>
         </div>
     </div>
-
-</body>
+  </body>
+</html>
