@@ -25,8 +25,8 @@
     <nav class="border-b border-black px-4 py-3 font-bold uppercase text-base flex justify-between">
         <div class="flex gap-4">
             <a href="index.html" class="bg-black text-white px-2 py-1 rounded">Home</a>
-            <a href="research.html" class="hover:underline">Research</a>
             <a href="project.html" class="hover:underline">Projects</a>
+            <a href="research.html" class="hover:underline">Research</a>
             <a href="experiments.html" class="hover:underline">Experiments</a>
             <a href="#" class="hover:underline">More</a>
         </div>
@@ -40,7 +40,7 @@
                     Namaste! 🙏 <br />
                     <span class="text-2xl">I am Rutu, a <span id="cyclic-text" style="color:orangered"> </span></span>
                 </h1>
-                <p class="text-base pr-4 text-justify">
+                <p class="text-base pr-4 pt-4 text-justify">
                     Currently a Master's student in Computer Science at <b>The George Washington Univeristy.</b> I am researching multiple areas in systems like eBPF in Database Security, Network Function Virtualization, and Energy-Efficient Machine Learning.
                     Before this, I worked in the Machine Learning Operations domain at <b>Syncron</b> 
                     where I played roles of <b>DevOps</b>, <b>Data Scientist</b>, <b>Software Developer</b>, <b>Machine Learning Engineer,</b> and more. 
@@ -70,7 +70,7 @@
                 </div>
             </div>
 
-            <div class="flex flex-col md:w-1/5 p-8">
+            <div class="flex flex-col md:w-1/5 items-end">
                 <img src="assets/normalrutu.svg" alt="Rutu" class="w-64 object-contain" />
             </div>
         </section>
@@ -80,67 +80,83 @@
         </h1>
 
         <section class="flex flex-col md:flex-row gap-2 p-8"> 
-            <div class="flex flex-col md:w-1/4 items-start">
+            <div class="flex flex-col md:w-1/4 items-start pt-8">
                 <img src="assets/gradrutu.svg" alt="Rutu" class="w-64 object-contain" />
             </div> 
 
             <div class="flex flex-col md:w-3/4 p-8">
-                <ol class="items-center sm:flex">
-                    <li class="relative mb-6 sm:mb-0">
-                        <div class="flex items-center">
-                            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white sm:ring-8 shrink-0">
-                                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                                </svg>
+
+                <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+                    <li class="mb-10 ms-6">            
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Graduate</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2024 - Dec 2025</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>The George Washington University</u></h1>
                             </div>
-                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                        </div>
-                        <div class="mt-3 sm:pe-8">
-                            <h3 class="text-lg font-semibold text-gray-900">Graduate</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2024 - Dec 2025</time>
-                            <h1 class="text-xl font-semibold mb-2"><u>The George Washington University</u></h1>
-                            <div class="text-base">
-                                <p>Master of Science, Computer Science</p>
-                                <p>School of Engineering and Applied Sciences</p>
-                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Washington, D.C.</h1>
+                            </div>                                
+                        </section>
+                        <div class="text-base">
+                            <p>Master of Science, Computer Science</p>
+                            <p>School of Engineering and Applied Sciences</p>
                         </div>
                     </li>
-                    <li class="relative mb-6 sm:mb-0">
-                        <div class="flex items-center">
-                            <div class="z-10 flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full ring-0 ring-white sm:ring-8 shrink-0">
-                                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                                </svg>
+                    <li class="mb-10 ms-6">            
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Undergraduate</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Aug 2016 - Sep 2020</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>Bangalore Univeristy</u></h1>
                             </div>
-                            <div class="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-                        </div>
-                        <div class="mt-3 sm:pe-8">
-                            <h3 class="text-lg font-semibold text-gray-900">Undergraduate</h3>
-                            <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Aug 2016 - Sep 2020</time>
-                            <h1 class="text-xl font-semibold mb-2"><u>Bangalore University</u></h1>
-                            <div class="text-base">
-                                <p>Bachelor of Engineering, Computer Science and Engineering</p>
-                                <p>University Visvesvaraya College of Engineering</p>
-                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Bangalore, India</h1>
+                            </div>                                
+                        </section>
+                        <div class="text-base">
+                            <p>Bachelor of Engineering, Computer Science and Engineering</p>
+                            <p>University Visvesvaraya College of Engineering</p>
                         </div>
                     </li>
                 </ol>
-            </div>            
+            </div>
         </section>
 
         <h1 class="text-4xl font-bold pt-8 pb-8">
           Work
         </h1>
 
+
         <section class="flex flex-col md:flex-row gap-2 p-8">
             <div class="flex flex-col md:w-4/5 items-start">
-
                 <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
-                    <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Sep 2024 - May 2025</time>
-                        <h3 class="text-lg">Graduate Teaching Assistant</h3>
-                        <h3 class="text-xl font-semibold mb-2"><u>George Washington University</u></h3>
+                    <li class="mb-10 ms-6">            
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Graduate Teaching Assistant</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Jan 2024 - Dec 2025</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>The George Washington University</u></h1>
+                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Washington, D.C.</h1>
+                            </div>                                
+                        </section>
                         <div class="text-base">
                             <p class="pt-4">
                                 <b>Spring'25: </b> Computer Architecture and Organization
@@ -150,47 +166,89 @@
                             </p>
                         </div>
                     </li>
-                    <li class="mb-10 ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2022 - Dec 2023</time>
-                        <h3 class="text-lg">Software Engineer</h3>
-                        <h3 class="text-xl font-semibold mb-2"><u>Syncron</u></h3>
-                        <ul class="p-4 list-disc text-base text-justify">
-                            <li class="pt-4">As an integral part of <b>Syncron.AI</b> team, worked with Data Scientists, Architects, & Engineers to build a platform for Experimentation, Model Training, Inference, Monitoring, Governance, Deployment, & Feature Engineering, reducing the time between inception & delivery of ML Solutions by <b>60%.</b></li>
-                            <li class="pt-4">Developed online and offline multi-tenant <b>Feature Store</b> for supporting ML workflows, serving over 5 million features per tenant, and reducing the run-time of ML Pipelines by <b>40%.</b></li>
-                            <li class="pt-4">Developed event-driven <b>CI/CD</b> pipelines using GitHub Actions and Triggermesh for provisioning artifacts for ML Pipeline Components in various environments, resulting in a <b>70%</b> faster provisioning of ML Artifacts.</li>
-                            <li class="pt-4">Within two weeks, built an interactive <b>Top-Down Price Optimisation Application</b> for performing constrained optimization of prices to achieve revenue and profit goals by understanding the underlying mathematics of Lagrange’s Multipliers, analyzing customer data, and deploying on Kubernetes (Knative + Istio), leading to a key customer win and bringing in millions in revenue.</li>
-                        </ul>
-                        <p class="text-base"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                    <li class="mb-10 ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Software Engineer</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Jan 2022 - Dec 2022</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>Syncron</u></h1>
+                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Bangalore, India</h1>
+                            </div>                                
+                        </section>
+                        <div class="text-base">
+                            <ul class="p-4 list-disc text-base text-justify">
+                                <li class="pt-4">As an integral part of <b>Syncron.AI</b> team, worked with Data Scientists, Architects, & Engineers to build a platform for Experimentation, Model Training, Inference, Monitoring, Governance, Deployment, & Feature Engineering, reducing the time between inception & delivery of ML Solutions by <b>60%.</b></li>
+                                <li class="pt-4">Developed online and offline multi-tenant <b>Feature Store</b> for supporting ML workflows, serving over 5 million features per tenant, and reducing the run-time of ML Pipelines by <b>40%.</b></li>
+                                <li class="pt-4">Developed event-driven <b>CI/CD</b> pipelines using GitHub Actions and Triggermesh for provisioning artifacts for ML Pipeline Components in various environments, resulting in a <b>70%</b> faster provisioning of ML Artifacts.</li>
+                                <li class="pt-4">Within two weeks, built an interactive <b>Top-Down Price Optimisation Application</b> for performing constrained optimization of prices to achieve revenue and profit goals by understanding the underlying mathematics of Lagrange’s Multipliers, analyzing customer data, and deploying on Kubernetes (Knative + Istio), leading to a key customer win and bringing in millions in revenue.</li>
+                                <li class="pt-4">View my work <a href="https://www.syncron.com/slm-platform/ai-powered/" target="_blank" class="underline text-blue-500">here</a></li>
+                            </ul>
+                            <p class="text-base"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                        </div>
                     </li>
-                    <li class="ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2021 - Dec 2021</time>
-                        <h3 class="text-lg">Associate Software Developer</h3>
-                        <h3 class="text-xl font-semibold mb-2"><u>Syncron</u></h3>
-                        <ul class="p-4 list-disc text-base text-justify">
-                            <li class="pt-4">Developed platform for orchestrating Machine Learning workloads by analyzing proprietary solutions & developing vendor-agnostic architecture using Kubernetes (Kubeflow + EKS) resulting in 90% reduction in operation costs from proprietary solutions.</li>
-                            <li class="pt-4">Created Python Packages for interacting with Data Lake by analyzing the requirements of Data Scientists and MLOps Engineers, resulting in a smoother experience in both performing EDA(Exploratory Data Analysis) & developing scalable ML Pipelines and reducing the time spent in writing code for data query by 20%.</li>
-                            <li class="pt-4">Developed end-to-end Pipelines for performing both Statistical and ML use cases like Volume Price Mix Analysis, Customer Segmentation, Affinity Analysis, & Quotation Guidance, automatically generating analytical dashboards for client use, and reducing the delivery time by over 60%.</li>
-                        </ul>
-                        <p class="text-base pb-8"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                    <li class="ms-6">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Associate Software Developer</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Jan 2021 - Dec 2021</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>Syncron</u></h1>
+                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Bangalore, India</h1>
+                            </div>                                
+                        </section>
+                        <div class="text-base">
+                            <ul class="p-4 list-disc text-base text-justify">
+                                <li class="pt-4">Developed platform for orchestrating Machine Learning workloads by analyzing proprietary solutions & developing vendor-agnostic architecture using Kubernetes (Kubeflow + EKS) resulting in 90% reduction in operation costs from proprietary solutions.</li>
+                                <li class="pt-4">Created Python Packages for interacting with Data Lake by analyzing the requirements of Data Scientists and MLOps Engineers, resulting in a smoother experience in both performing EDA(Exploratory Data Analysis) & developing scalable ML Pipelines and reducing the time spent in writing code for data query by 20%.</li>
+                                <li class="pt-4">Developed end-to-end Pipelines for performing both Statistical and ML use cases like Volume Price Mix Analysis, Customer Segmentation, Affinity Analysis, & Quotation Guidance, automatically generating analytical dashboards for client use, and reducing the delivery time by over 60%.</li>
+                            </ul>
+                            <p class="text-base"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                        </div>
                     </li>
-                    <li class="ms-4">
-                        <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-                        <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Jan 2020 - Dec 2020</time>
-                        <h3 class="text-lg">Intern</h3>
-                        <h3 class="text-xl font-semibold mb-2"><u>Syncron</u></h3>
-                        <ul class="p-4 list-disc text-base text-justify">
-                            <li class="pt-4">Developed admin for the Business Intelligence (BI) platform for monitoring, alerting, and preventing cross-tenant access in a system of over 100 tenants and thousands of users per tenant.</li>
-                            <li class="pt-4">Developed backup service for BI software, for managing periodic backups of BI Data Models and Dashboards, making BI reliable for thousands of users spanning over 100 tenants.</li>
-                        </ul>
-                        <p class="text-base pb-8"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                    <li class="ms-6 pt-8">
+                        <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white">
+                            <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                            </svg>
+                        </span>
+                        <h3 class="text-lg font-semibold text-gray-900">Intern</h3>
+                        <time class="block mb-2 text-sm font-normal leading-none text-gray-400">Jan 2020 - Dec 2020</time>
+                        <section class="flex flex-col md:flex-row gap-2">
+                            <div class="flex flex-col md:w-2/3 items-start">
+                                <h1 class="text-xl font-semibold mb-2"><u>Syncron</u></h1>
+                            </div>
+                            <div class="flex flex-col md:w-1/3 items-end">
+                                <h1 class="text-sm mb-2">Bangalore, India</h1>
+                            </div>                                
+                        </section>
+                        <div class="text-base">
+                            <ul class="p-4 list-disc text-base text-justify">
+                                <li class="pt-4">Developed admin for the Business Intelligence (BI) platform for monitoring, alerting, and preventing cross-tenant access in a system of over 100 tenants and thousands of users per tenant.</li>
+                                <li class="pt-4">Developed backup service for BI software, for managing periodic backups of BI Data Models and Dashboards, making BI reliable for thousands of users spanning over 100 tenants.</li>
+                            </ul>
+                            <p class="text-base"><b>Tech Stack: </b>AWS, Terraform, Kubernetes, Docker, Kubeflow, Python</p>
+                        </div>
                     </li>
                 </ol>
-            </div>  
-            <div class="flex flex-col md:w-1/5 p-8">
+            </div>
+            
+            <div class="flex flex-col md:w-1/5 items-end">
                 <img src="assets/skilledrutu.svg" alt="Rutu" class="w-64 object-contain" />
-            </div>  
+            </div>
+
         </section>
 
         <div class="pt-8">
