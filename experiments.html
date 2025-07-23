@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rutu's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/flip.js"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <style>
+        body {
+            background-image: radial-gradient(#eee 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: top left;
+            font-family: monospace;
+        }
+    </style>
+  </head>
+
+  <body class="bg-white text-black">
+    <!-- Top Nav -->
+    <nav class="border-b border-black px-4 py-3 font-bold uppercase text-base flex justify-between">
+        <div class="flex gap-4">
+            <a href="index.html" class="hover:underline">Home</a>
+            <a href="research.html" class="hover:underline">Research</a>
+            <a href="project.html" class="hover:underline">Projects</a>
+            <a href="experiments.html" class="bg-black text-white px-2 py-1 rounded">Experiments</a>
+            <a href="#" class="hover:underline">More</a>
+        </div>
+    </nav>
+
+    <div class="p-16">
+
+        <h1 class="font-bold text-4xl">DPDK - Experiments and code walkthroughs</h1>
+        <div class="grid grid-cols-3 gap-4 pt-10">
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Installing DPDK and running the Helloworld application.</h5>
+                    <p class="pt-4 text-base">
+                        My first experiment with DPDK
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Installing-DPDK-and-running-the-helloworld-application-98ee5000a0cd4e72bde4d0ded3beac4b" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Breaking down the Helloworld DPDK Application</h5>
+                    <p class="pt-4 text-base text-justify">
+                        Understanding the parts of DPDK and the code for a basic DPDK application.
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Installing-DPDK-and-running-the-helloworld-application-98ee5000a0cd4e72bde4d0ded3beac4b" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Binding Network ports to DPDK</h5>
+                    <p class="pt-4 text-base text-justify">
+                        An experiment on binding network ports to DPDK and running the <code class="bg-gray-200 rounded px-2 py-1 text-pink-700 font-mono">simple-lan</code> experiment
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Installing-DPDK-and-running-the-helloworld-application-98ee5000a0cd4e72bde4d0ded3beac4b" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Running the basic forwarding Application with DPDK</h5>
+                    <p class="pt-4 text-base text-justify">
+                        This experiment covers running the <a target="_blank" href="https://doc.dpdk.org/guides/sample_app_ug/skeleton.html" class="underline text-blue-500">Basic Port Forwarding Sample Application</a> from DPDK.
+                        It binds and pairs the ports and forwards packets betwen them.
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Installing-DPDK-and-running-the-helloworld-application-98ee5000a0cd4e72bde4d0ded3beac4b" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Breaking down the Basic Port forwarding application with DPDK</h5>
+                    <p class="pt-4 text-base text-justify">
+                        This covers an explanation of hte basic port forwarding applicaiton built with DPDK. 
+                        It contains a detailed explanation of every component involved. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Breaking-down-the-DPDK-simple-port-forwarding-application-bcea69ad72ef4db2a41c9ccaa76a8170" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Modifying the basic port forwarding application</h5>
+                    <p class="pt-4 text-base text-justify">
+                        This article shows how the basic port forwarding application from DPDK can be modified to print the queries sent to the MySQL database. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-XDP-2bf3bd9430e5412caf96f15c51aaef75" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h1 class="font-bold text-4xl pt-10">eBPF - Experiments and Code walkthroughs</h1>
+        <div class="grid grid-cols-3 gap-4 pt-10">
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Trying out eBPF and XDP</h5>
+                    <p class="pt-4 text-base text-justify">
+                        My first experiment with eBPF and XDP. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-XDP-2bf3bd9430e5412caf96f15c51aaef75" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Breaking down the Basic 01 XDP application</h5>
+                    <p class="pt-4 text-base text-justify">
+                        This contains a detailed walkthrough of the Basic 01 XDP application. 
+                        It contains the line-by-line explanation of the underlying C code. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Tracing-sys_enter_execve-syscall-tracepoint-using-eBPF-Go-and-ringbuf-b08ab172b6c441e199570a692b341ace" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Trying out eBPF and Go</h5>
+                    <p class="pt-4 text-base text-justify">
+                        Learning how to use eBPF with Go. 
+                        This experiment led me to building <code class="bg-gray-200 rounded px-2 py-1 text-pink-700 font-mono">cloudlab-tools</code>, 
+                        <code class="bg-gray-200 rounded px-2 py-1 text-pink-700 font-mono">cloudlab-ebpf</code>, and all the other associated projects. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-Go-9874d1d6b7e9483e8381acffb517aff5" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-black">
+                <div class="p-6">
+                    <h5 class="font-bold text-xl">Tracing syscalls with eBPF and Go</h5>
+                    <p class="pt-4 text-base text-justify">
+                        An example of how eBPf can be used to trace system calls. It contains detailed explanation of my work with some problems and resolutions. 
+                        This experiment was done using <code class="bg-gray-200 rounded px-2 py-1 text-pink-700 font-mono">cloudlab-tools</code>. 
+                    </p>
+                    <div class="pt-4 text-base">
+                        <a href="https://gwu-systems.notion.site/Trying-out-eBPF-and-Go-9874d1d6b7e9483e8381acffb517aff5" target="_blank"><button class="hover:bg-yellow-400 border-2 border-black py-2 px-4">Read Article</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

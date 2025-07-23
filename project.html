@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Rutu</title>
+    <title>Rutu's portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="scripts/text.js"></script>
@@ -26,107 +26,14 @@
             <a href="index.html" class="hover:underline">Home</a>
             <a href="research.html" class="hover:underline">Research</a>
             <a href="project.html" class="bg-black text-white px-2 py-1 rounded">Projects</a>
-            <a href="#" class="hover:underline">Experiments</a>
+            <a href="experiments.html" class="hover:underline">Experiments</a>
             <a href="#" class="hover:underline">More</a>
         </div>
     </nav>
 
     <div class="p-16">
+
       <h1 class="text-4xl font-bold">
-        OS Projects
-      </h1>
-      <p class="text-base pt-8 text-justify">
-        These projects were a part of the <u>Advanced Operating Systems</u> course that I took in Spring'25.
-      </p>
-
-      <h1 class="text-2xl font-bold pt-8">
-        Unix Nameserver
-      </h1>
-      <section class="flex flex-col md:flex-row gap-2 pt-8"> 
-        <div class="flex flex-col pl-6 pt-4 md:w-2/6 h-80">
-          <img src="assets/nameserver.png" alt="" class="h-full object-contain" />
-        </div>
-        <div class="flex flex-col md:w-4/6">
-          
-
-          
-          <p class="text-base pt-2 text-justify">
-            A nameserver that listens on a named domain socket and listens for connections, 
-            where a client connecting to the nameserver can perform one of the three actions: 
-          </p>
-          
-          <ul class="text-base list-disc pt-6 pl-12 pb-6">
-            <li>Publish resource</li>
-            <li>Request resource</li>
-            <li>Exit</li>
-          </ul>
-          
-          <p class="text-base text-justify">
-            The server maintains a list of active connections and the associated resources they provide.
-            It uses <b>epoll</b> to listen on the <b>named domain socket</b> and on existing client connections. 
-            The named domain socket is used to establish new connections and the existing connections are used for <b>PUB/SUB.</b>
-          </p>
-          
-          <div class="pt-4">
-            <p class="text-base">
-              <b>Keywords: </b> <u>C, Sockets, Nameserver, OS, File Descriptors</u>
-            </p>
-          </div>
-          
-          <div class="pt-4">
-            <a href="https://github.com/rutu-sh/advos-unix-service" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                GitHub | rutu-sh/advos-unix-service
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <h1 class="text-2xl font-bold pt-8">
-        Unikernel Proxy
-      </h1>
-
-      <section class="flex flex-col md:flex-row gap-2 pt-8 pb-8">
-        <div class="flex flex-col pt-4 md:w-2/6 h-80">
-          <img src="assets/rev_proxy.png" alt="" class="h-full object-contain" />
-        </div>
-        <div class="flex flex-col md:w-4/6">
-          <p class="pt-2 text-base text-justify">
-            This is a <b>reverse proxy</b> written and built for <b>Unikraft.</b> 
-            A reverse proxy is a service used to protect the identity of the servers from externel clients. 
-            The proxy also provides authentication and load-balancing features for the services. 
-          </p>    
-
-          <p class="text-base pt-4 text-justify">
-            <a href="https://unikraft.org/" class="underline text-blue-500">Unikraft</a> is a toolkit for building Unikernels. 
-            <a href="https://en.wikipedia.org/wiki/Unikernel" class="underline text-blue-500">Unikernels</a> are kernels built to specialize for a single application. 
-            Specialization for a single application makes the Unikernels extremely lightweight as only the required tools are added. 
-          </p>
-
-          <div class="pt-4">
-            <p class="text-base">
-              <b>Keywords: </b> <u>C, Sockets, Unikraft, Unikernel, OS</u>
-            </p>
-          </div>
-
-          <div class="pt-4">
-            <a href="https://github.com/swarupgt/unikernel-proxy" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
-                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                GitHub | swarupgt/unikernel-proxy
-            </a>
-          </div>
-        </div>
-
-      </section>
-
-      <hr>
-
-      <h1 class="text-4xl font-bold pt-8">
         Distributed Systems
       </h1>
 
@@ -141,22 +48,25 @@
       </h1>
 
       <section class="flex flex-col md:flex-row gap-2 pt-8 pb-8">
-        <div class="flex flex-col pt-4 md:w-2/6 h-80">
+        <div class="flex flex-col pt-4 md:w-2/6 h-80 p-6">
           <img src="assets/distsys_rag.jpg" alt="" class="h-full object-contain" />
         </div>
         <div class="flex flex-col md:w-4/6">
           <p class="text-base text-justify pt-4">
-            This project aims at building a Distributed Retrieval Augmented Generation pipeline using open source tools. 
+            This project aims at building a <b>Distributed Retrieval Augmented Generation pipeline</b> using <u>open source</u> tools. 
             It allows user to upload documents and run natural language query on them. The documents are chunked and embedded into vectors.
-            The vectors are stored in the vector database Milvus. 
+            The vectors are stored in the vector database <b>Milvus.</b> 
           </p>
           <p class="text-base pt-2">
             When a user queries, the query is embeded and a similarity search is performed on the corpus stored in the vector database which returns the embedded chunks. 
             The chunks are augmented to the query, providing a more complete context to the LLM. 
           </p>
           <p class="text-base pt-2">
+            The project aims to provide <b>Scalability, Fault Tolerance, and Observability</b> for RAG pipelines.
+          </p>
+          <p class="text-base pt-2">
             It utilizes: 
-            <ol class="pl-12 pt-2 list-decimal text-base">
+            <ol class="pl-28 pt-8 list-decimal text-base">
                 <li>
                     <b>Ollama:</b> as LLM (qwen2.5) and Embedder (all-mini-lm)
                 </li>
@@ -175,13 +85,13 @@
             </ol>
           </p>
 
-          <div class="pt-4">
+          <div class="pt-8">
             <p class="text-base">
-              <b>Keywords: </b> <u>LLM, RAG, Vector Database, Chatbot, Kubernetes, Fault Tolerance, Scalability, Distributed Systems</u>
+              <b>Keywords: </b> <u>LLM, RAG, Vector Database, Chatbot, Kubernetes, Fault Tolerance, Scalability, Observability Distributed Systems</u>
             </p>
           </div>
 
-          <div class="pt-4">
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/distributed-rag" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -194,6 +104,190 @@
       </section>
 
       <hr>
+
+      <h1 class="text-4xl font-bold pt-8">
+        Procman
+      </h1>
+
+      <p class="text-base text-justify pt-8">
+        This is my own implementation of Kubernetes and Docker. I am building a sereis of projects to mimic the functionalities of Docker and Kubernetes.
+        This is an ongoing work and currently it is focused on building a containerization platform from scratch. 
+        The intended result of this work will be a set of tools to orchestrate <code>Processes</code> in a cluster. 
+        Though it started off as a way for me to learn the inner workings of Docker and Kubernetes, I am learning new technologies everday and hence 
+        planning to add my own customizations like: <u> Process migration with criu, CNI using eBPF, Native DPDK/SPDK/RDMA support</u>
+      </p>
+
+      <h1 class="text-2xl font-bold pt-8">
+        The Procman CLI
+      </h1>
+
+      <section class="flex flex-col md:flex-row gap-2 pt-8">
+        <div class="flex flex-col pt-4 md:w-2/6 h-80 p-20">
+          <img src="assets/pman-cli.jpg" alt="" class="h-full object-contain" />
+        </div>
+
+        <div class="flex flex-col md:w-4/6">
+          <p class="text-base">
+            This is the <code>Go-based</code> interface for the Procman tool. It helps set up the environment for containerization using user-provided inputs. 
+            It provides the following features:
+            <ul class="text-base list-disc pt-8 pl-28">
+                <li>Manage Images using Alpine Minirootfs</li>
+                <li>Creates filesystem for containers</li>
+            </ul>
+          </p>
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Go, CLI, FileSystems</u>
+            </p>
+          </div>
+          
+          <div class="pt-8">
+            <a href="https://github.com/proc-manager/procman" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub | proc-manager/procman
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <h1 class="text-2xl font-bold">
+        The Procman Daemon
+      </h1>
+
+      <section class="flex flex-col md:flex-row gap-2 pt-8 pb-8">
+        <div class="flex flex-col pt-4 md:w-2/6 h-80 p-20">
+          <img src="assets/pman-daemon.jpg" alt="" class="h-full object-contain" />
+        </div>
+
+        <div class="flex flex-col md:w-4/6">
+          <p class="text-base">
+            This will be the long-running daemon for procman. It sets up the isolation for the container processes and starts their run. 
+            This is an important part of the Procman ecosystem as it has complete control over the underlying container processes.
+            It provides the following features:
+            <ul class="list-disc text-base pt-8 pl-28">
+                <li>Trigger the run for containers</li>
+                <li>Manage namespaces (i.e. Network, MNT, Chroot, etc)</li>
+                <li>Set up networking for the containers ( via veth )</li>
+                <li>Monitor the run of processes - restart if required.</li>
+            </ul>
+          </p>
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Rust, Linux, Namespaces, Networking</u>
+            </p>
+          </div>
+          
+          <div class="pt-8">
+            <a href="https://github.com/proc-manager/procmand" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub | proc-manager/procmand
+            </a>
+          </div>
+        </div>
+      </section>
+
+
+      <hr>
+
+      <h1 class="text-4xl font-bold pt-8">
+        OS Projects
+      </h1>
+      <p class="text-base pt-8 text-justify">
+        These projects were a part of the <u>Advanced Operating Systems</u> course that I took in Spring'25.
+      </p>
+
+      <h1 class="text-2xl font-bold pt-8">
+        Unix Nameserver
+      </h1>
+      <section class="flex flex-col md:flex-row gap-2 pt-8"> 
+        <div class="flex flex-col pl-6 pt-4 md:w-2/6 h-80">
+          <img src="assets/nameserver.png" alt="" class="h-full object-contain" />
+        </div>
+        <div class="flex flex-col md:w-4/6">
+           
+          <p class="text-base pt-2 text-justify">
+            A nameserver that listens on a named domain socket and listens for connections, 
+            where a client connecting to the nameserver can perform one of the three actions: 
+          </p>
+          
+          <ul class="text-base list-disc pt-8 pl-28 pb-6">
+            <li>Publish resource</li>
+            <li>Request resource</li>
+            <li>Exit</li>
+          </ul>
+          
+          <p class="text-base text-justify">
+            The server maintains a list of active connections and the associated resources they provide.
+            It uses <b>epoll</b> to listen on the <b>named domain socket</b> and on existing client connections. 
+            The named domain socket is used to establish new connections and the existing connections are used for <b>PUB/REQ.</b>
+          </p>
+          
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>C, Sockets, Nameserver, OS, File Descriptors</u>
+            </p>
+          </div>
+          
+          <div class="pt-8">
+            <a href="https://github.com/rutu-sh/advos-unix-service" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub | rutu-sh/advos-unix-service
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <h1 class="text-2xl font-bold pt-8">
+        Unikernel Proxy
+      </h1>
+
+      <section class="flex flex-col md:flex-row gap-2 pt-8 pb-8">
+        <div class="flex flex-col pt-4 md:w-2/6 h-80 p-8">
+          <img src="assets/rev_proxy.png" alt="" class="h-full object-contain" />
+        </div>
+        <div class="flex flex-col md:w-4/6">
+          <p class="pt-2 text-base text-justify">
+            This is a <b>reverse proxy</b> written and built for <b>Unikraft.</b> 
+            A reverse proxy is a service used to protect the identity of the servers from externel clients. 
+            The proxy also provides authentication and load-balancing features for the services. 
+          </p>    
+
+          <p class="text-base pt-4 text-justify">
+            <a href="https://unikraft.org/" class="underline text-blue-500">Unikraft</a> is a toolkit for building Unikernels. 
+            <a href="https://en.wikipedia.org/wiki/Unikernel" class="underline text-blue-500">Unikernels</a> are kernels built to specialize for a single application. 
+            Specialization for a single application makes the Unikernels extremely lightweight as only the required tools are added. 
+          </p>
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>C, Sockets, Unikraft, Unikernel, OS</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
+            <a href="https://github.com/swarupgt/unikernel-proxy" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                GitHub | swarupgt/unikernel-proxy
+            </a>
+          </div>
+        </div>
+
+      </section>
+
+      <hr>
+
 
       <h1 class="text-4xl font-bold pt-8">
         High Performance HTTP Benchmarking
@@ -218,7 +312,7 @@
           <p class="text-base pt-4 pr-8 text-justify">
               This work presents a thorough comparison of different HTTP Benchmarking tools. 
               It evaluates and compares the following tools: 
-              <ul class="list-disc pt-4 pl-16 text-base underline text-blue-500">
+              <ul class="list-disc pt-8 pl-28 text-base underline text-blue-500">
                   <li><a href="https://github.com/hatoo/oha" target="_blank">Oha</a></li>
                   <li><a href="https://httpd.apache.org/docs/2.4/programs/ab.html" target="_blank">Apache Bench (ab)</a></li>
                   <li><a href="https://locust.io/" target="_blank">Locust</a></li>
@@ -231,7 +325,14 @@
               Read the full report on how these tools compare against each other 
               <a href="https://github.com/rutu-sh/load-testing" target="_blank" class="underline text-blue-500">here.</a>
           </p>
-          <div class="pt-4">
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Bash, HTTP, Nginx, Load Testing, SSH, Experimentation</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/load-testing" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -259,7 +360,7 @@
             This is a result of the research work I did as a part of my Research course during my Masters at GWU. 
             It provides a repository that lets researchers load test their web servers with variying configurations and gather metrics for the entire duration of the load test. 
           </p>
-          <ul class="list-disc pt-4 pl-16 text-base">
+          <ul class="list-disc pt-8 pl-28 text-base">
               <li>Uses K6 for generating loads</li>
               <li>Allows reproducibility of experiments</li>
               <li>Collects metrics for both load generator and the target system</li>
@@ -267,7 +368,14 @@
               <li>Generates plots for analysis</li>
               <li>Allows easy configurations and experiments management</li>
           </ul>
-          <div class="pt-4">
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Bash, HTTP, Nginx, Load Testing, SSH, Experimentation</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/gwcloudlab/exp-load-test" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -318,8 +426,15 @@
                 <li>Install dependencies</li>
                 <li>Experimentation</li>
             </ul>
+          </p>
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>eBPF, Linux, Kernel, C, Go, SSH</u>
             </p>
-          <div class="pt-4">
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/cloudlab-ebpf" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -342,7 +457,7 @@
           <p class="text-base pt-4 text-justify">
             A repository with setup scripts for creating a 3-node Kubernetes cluster with minimum configuration and just a single <code>make</code> command. 
             This tool provides the following features:
-            <ul class="list-disc pt-4 pl-8 text-base">
+            <ul class="list-disc pt-8 pl-28 text-base">
                 <li>Creates a 3-Node Kubernetes cluster</li>
                 <li>Copies the <code class="bg-gray-200 rounded px-2 py-1 text-pink-700 font-mono">.kubeconfig</code> to the local</li>
                 <li>Sets up the CNI</li>
@@ -350,11 +465,18 @@
             </ul>
           </p>
 
-          <p class="text-base pt-4 text-justify">
+          <p class="text-base pt-8 text-justify">
             An intention behind this tool is that the initial setup required for Kubernetes can be overwhelming for newcomers. 
             This tool bridges that gap and allows them to focus on their goals. 
           </p>
-          <div class="pt-4">
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Kubernetes, Bash</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/cloudlab-kubernetes" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -377,14 +499,21 @@
           <p class="text-base pt-8 text-justify">
             A repository with setup scripts for creating a 3-node Kubernetes cluster with minimum configuration and just a single <code>make</code> command. 
             This tool provides the following features:
-            <ul class="list-disc pt-8 text-base">
+            <ul class="list-disc pt-4 pl-28 text-base">
               <li>Installs DPDK dependencies</li>
               <li>Allocates Hugepages</li>
               <li>Loads the Kernel Modules</li>
               <li>Builds DPDK</li>
             </ul>
           </p>
-          <div class="pt-4">
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>DPDK, Linux, Networking, Hugepages, C</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/cloudlab-dpdk" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -392,6 +521,7 @@
                 GitHub | rutu-sh/cloudlab-dpdk
             </a>
           </div>
+
         </div>
       </section>
 
@@ -410,7 +540,7 @@
             It can be used as a submodule in your experimentation repository and easily integrates while providing tools for ease of development.
             I made it lightweight as possible. 
             It provides setup scripts for the following:
-            <ul class="list-disc pt-4 pl-8 text-base">
+            <ul class="list-disc pt-4 pl-28 text-base">
               <li>eBPF</li>
               <li>DPDK</li>
               <li>Kubernetes</li>
@@ -418,7 +548,14 @@
               <li>Go</li>
             </ul>
           </p>
-          <div class="pt-4">
+
+          <div class="pt-8">
+            <p class="text-base">
+              <b>Keywords: </b> <u>Automation, eBPF, Docker, DPDK, Kubernetes, Go</u>
+            </p>
+          </div>
+
+          <div class="pt-8">
             <a href="https://github.com/rutu-sh/cloudlab-tools" target="_blank"  class="border border-black px-4 py-2 text-sm font-bold hover:bg-yellow-400 inline-flex items-center gap-2">
                 <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
