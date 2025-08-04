@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rutu's portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts/text.js"></script>
+    <script src="scripts/flip.js"></script>
+    <link rel="stylesheet" href="css/tailwind.css">
+    <style>
+        body {
+            background-image: radial-gradient(#eee 1px, transparent 1px);
+            background-size: 24px 24px;
+            background-position: top left;
+            font-family: monospace;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+  </head>
+
+  <body class="bg-white text-black">
+
+
+
+    <div class="pt-8 pl-16 pr-16 pb-16">
+
+        <section class="flex flex-col md:flex-row gap-2 pb-6"> 
+            <div class="flex flex-col md:w-1/3">
+                <div>
+
+                </div>
+            </div>
+            <div class="flex flex-col md:w-1/3 items-center">
+                    <h1 class="text-4xl">
+                        Rutu's Blog
+                    </h1>
+                    <p class="text-green-500">
+                        <a href="../index.html" target="_blank">Website</a> | <a href="https://github.com/rutu-sh" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/rutu-sh/" target="_blank">LinkedIn</a> 
+                    </p>
+            </div>
+            <div class="flex flex-col md:w-1/3 items-end">
+                <!-- <img src="../assets/normalrutu.svg" alt="Rutu" class="w-40 object-contain" /> -->
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="flex flex-col md:flex-row gap-2 pb-6"> 
+            <div class="flex flex-col md:w-1/5"></div> 
+            <div class="flex flex-col md:w-3/5">
+                <h1 class="text-4xl pt-6 text-center">
+                    Using GPUs with Kubernetes
+                </h1>
+                <h2 class="text-2xl text-gray-500 text-center">
+                    On-prem AI infra like a chad
+                </h2>
+
+                <div class="pt-6">
+                    <p class="text-base">
+                    Setting up GPU allocation for Kubernetes can be tricky, 
+                    this article takes you through the process, common errors, and steps to create your own Kubernetes cluster that can allocate GPUs to workloads.  
+                    </p>
+                </div>
+
+
+
+                <!-- Code block container -->
+                <div class="relative group ">
+                    <!-- Tooltip target -->
+                    <button 
+                        type="button" 
+                        data-tooltip-target="tooltip-copy" 
+                        data-tooltip-placement="top" 
+                        class="copy-btn absolute top-7 right-2 z-10 bg-gray-200 text-white p-2 rounded-md hover:bg-gray-400 transition"
+                    >
+                    <span id="default-icon-course-url">
+                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 20">
+                            <path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z"/>
+                        </svg>
+                    </span>
+                    <span id="success-icon-course-url" class="hidden">
+                        <svg class="w-3.5 h-3.5 text-blue-700 dark:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                        </svg>
+                    </span>
+                        </svg>
+                    </button>
+
+                    <!-- Flowbite tooltip -->
+                    <div id="tooltip-copy" role="tooltip" class="absolute z-20 invisible inline-block px-3 py-1 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip">
+                        Copy to clipboard
+                        <div class="tooltip-arrow" data-popper-arrow></div>
+                    </div>
+
+                <!-- Highlight.js code block -->
+                    <pre class="rounded-lg text-white overflow-x-auto text-sm">
+                        <code class="language-yaml bg-gray-100">
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: llm-ol
+spec:
+  serviceName: llm-ol
+  replicas: 1
+  selector:
+    matchLabels:
+      app: llm
+  template:
+    metadata:
+      labels:
+        app: llm
+    spec:
+      containers:
+      - name: llm
+        image: ollama/ollama
+        command: 
+        - "/bin/bash"
+        - "-c"
+        - "ollama serve & sleep 5 && ollama pull gemma3:4b && wait"
+        securityContext:
+          privileged: true
+        ports:
+        - containerPort: 11434
+        resources:
+          requests:
+            cpu: "4"
+            memory: "20Gi"
+            nvidia.com/gpu: 1        
+          limits:
+            cpu: "4"
+            memory: "20Gi"
+            nvidia.com/gpu: 1
+        volumeMounts:
+          - name: llm-data
+            mountPath: /root/.ollama
+      volumes:
+        - name: llm-data
+          persistentVolumeClaim:
+            claimName: llm-ol-pvc
+                            </code>
+                        </pre>
+                    </div>
+            </div> 
+            <div class="flex flex-col md:w-1/5"></div> 
+        </section>
+
+
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".copy-btn").forEach((button) => {
+            button.addEventListener("click", () => {
+                const code = button.parentElement.querySelector("code").innerText;
+                navigator.clipboard.writeText(code).then(() => {
+                const tooltip = document.getElementById("tooltip-copy");
+                tooltip.textContent = "Copied!";
+                setTimeout(() => (tooltip.textContent = "Copy to clipboard"), 1500);
+                });
+            });
+            });
+        });
+    </script>
+    <script>hljs.highlightAll();</script>
+</body>
