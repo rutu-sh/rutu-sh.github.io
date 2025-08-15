@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const texts = [ "Student.", "Researcher.", "Software Developer.","Machine Learning Engineer."];;
+    const texts = [ "Student.", "Researcher.", "AI Infrastructure Engineer", "Software Developer.", "Machine Learning Engineer."];;
     let index = 0;
     let textElement = document.getElementById("cyclic-text");
 
